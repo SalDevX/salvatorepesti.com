@@ -20,54 +20,43 @@
 | `index.html` | `Cloudflare Email Protection (email-decode.min.js)`, `Geist & Geist Mono Typefaces` | — | Must not remove CF email script |
 
 ## Community 2 — Validator Core (tools/validator.py)
-
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
 | `tools/validator.py` | `_load_project_rules()`, `main()` | — | Loads optional `tools/validator_rules.py` |
 
-## Community 3 — Validator Rules: Asset / SFTP (tools/validator.py)
-
+## Community 3 — Validator Rules: Project-Specific (tools/validator_rules.py)
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `tools/validator.py` | `added_lines()`, `_rule_asset_path_consistency()`, `_rule_sftp_deploy_logic_gate()` | `_rule_sftp_deploy_logic_gate()` **4 edges**, `added_lines()` **3 edges** | sftp_sync.py must not gain logic; asset paths must exist on disk |
+| `tools/validator_rules.py` | `_rule_no_inline_styles()`, `_rule_email_protection_intact()`, `_rule_csp_not_weakened()`, `RULES`, `RETRY_WITH` | `_rule_email_protection_intact()` **4 edges** | Overrides all universal rules; Rule 2+3 escalate to human |
+| `tools/validator.py` | `added_lines_for_file()` | **4 edges** | File-scoped line extractor — called by inline-style and CSP rules |
 
 ## Community 4 — CDN / Performance (index.html)
-
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `index.html` | `Case 02 — SaaS p95 TTFB Reduction 71%`, `CDN & Caching Strategies`, `Frontend Performance Optimization`, `Infrastructure & Deployment Automation`, `Automated Release Pipelines` | `Case 02` **4 edges**, `CDN & Caching Strategies` **3 edges** | Performance metrics — owner confirmation before editing |
+| `index.html` | `Case 02 — reel-engine — fully automated YouTube content production pipeline`, `CDN & Caching Strategies`, `Frontend Performance Optimization`, `Infrastructure & Deployment Automation`, `Automated Release Pipelines` | `Case 02` **4 edges** (pending regraph), `CDN & Caching Strategies` **3 edges** | 500hrs/day shipped — owner confirmation before editing |
 
 ## Community 5 — Cloudflare / Edge (index.html + _headers + wrangler.toml)
 
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `index.html` | `Case 01 — Cloudflare-native Auth Layer for Fintech`, `API Design & Edge Compute`, `Authentication Systems` | — | |
+| `index.html` | `Case 01 — MartaHowell Jewellery — Cloudflare-native commerce and data infrastructure`, `API Design & Edge Compute`, `Authentication Systems` | — | Workers, D1, R2, FileMaker pipeline |
 | `index.html` + `_headers` | `Cloudflare Ecosystem`, `Edge Infrastructure` | `Cloudflare Ecosystem` **5 edges**, `Edge Infrastructure` **4 edges** | CSP + CDN config — parallel security review |
 | `wrangler.toml` | Pages config — name, build output dir | — | No credentials — safe to commit |
 
 ## Community 6 — Security (index.html + _headers)
-
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
 | `index.html` | `Salvatore Pesti`, `Browser Security Hardening`, `Secure Web Architecture`, `Security Auditing & Hardening`, `Principle: Security Is a Posture` | `Secure Web Architecture` **4 edges**, `Security Auditing & Hardening` **3 edges**, `Salvatore Pesti` **3 edges** | Identity + security nodes — owner + security-engineer audit |
 
 ## Community 7 — Validator Rules: Diff Parsing (tools/validator.py)
-
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `tools/validator.py` | `files_in_diff()`, `_rule_no_direct_data_js_edit()` | `files_in_diff()` **4 edges** | Parses `--- a/` headers; does NOT catch new files |
+| `tools/validator.py` | `files_in_diff()`, `_rule_no_direct_data_js_edit()` | `files_in_diff()` **4 edges** | Parses `--- a/` headers; does NOT catch new files; `_rule_no_direct_data_js_edit` is universal fallback — NOT active (overridden by validator_rules.py) |
 
-## Community 8 — Validator Rules: Mobile/Desktop Parity (tools/validator.py)
-
+## Community 8 — Validator Rules: Mobile/Desktop Parity / Email (tools/validator.py)
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `tools/validator.py` | `files_touched_in_diff()`, `_rule_mobile_desktop_parity()` | `files_touched_in_diff()` **3 edges** | Parses `+++ b/` headers; includes new files |
-
-## Community 9 — Custom Tooling (index.html)
-
-| File | Key functions / nodes | God node? | Notes |
-|------|-----------------------|-----------|-------|
-| `index.html` | `Case 03 — Custom Workflow Tooling (Media Client)`, `Custom Tooling & Workflow Engineering`, `Principle: Tooling Earns Its Keep` | — | |
+| `tools/validator.py` | `files_touched_in_diff()`, `removed_lines()`, `_rule_mobile_desktop_parity()` | `files_touched_in_diff()` **4 edges** | Parses `+++ b/` headers; includes new files; `_rule_mobile_desktop_parity` is universal fallback — NOT active (overridden by validator_rules.py) |
 
 ---
 
@@ -96,5 +85,5 @@
 | `js/main.js` | `clock()`, deploy date stamp, `reveal()` | @html-agent | Replaces all former inline scripts |
 | `_headers` | CSP, HSTS, cache-control per path | @html-agent + @security-engineer | Update CSP when adding new external origins |
 | `_redirects` | `/salvatorepesti.com.html → /`, `/index.html → /` | @html-agent | Cloudflare Pages redirect rules |
-| `wrangler.toml` | Pages config — name, build output dir | @html-agent | Wrangler auto-detects this filename; renamed from cloudflare.toml d06cd53 |
+| `wrangler.toml` | Pages config — name, build output dir | @html-agent | Auto-detected by Wrangler; renamed cloudflare.toml d06cd53; project name salvatorepesti-com→salvatorepesti 216ab7a |
 | `.gitignore` | Git ignore rules | @html-agent | Added d06cd53 |

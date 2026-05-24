@@ -57,14 +57,13 @@ git push origin main
 
 ## Recent Fixes
 
-*(populated by @memory-keeper after each commit)*
-
 | Date | What | File |
 |------|------|------|
-| 2026-05-24 | holography framework installed | full agent layer |
-| 2026-05-24 | memory-bootstrapper: filled human context in MEMORY.md | memory/MEMORY.md |
-| 2026-05-24 | domain-agent-builder: created html-agent, tooling-agent, security-engineer prompts; updated AGENTS.md + dispatcher.prompt | agents/ |
-| 2026-05-24 | refactor: single-file → multi-file; created index.html, css/main.css, css/fonts.css, js/main.js, _headers, _redirects, cloudflare.toml; removed 4 inline styles (→ .ext-arrow class); added CSP via _headers; updated all agent prompts + MEMORY_MAP.md | index.html, css/, js/, _headers |
-| 2026-05-24 | chore: sync agent metadata + graph after refactor — AGENTS.md god nodes synced (64 nodes, 89 edges, 10 communities); MEMORY_MAP.md rebuilt (12 sections); graphify-out/ regenerated; MEMORY_CHANGELOG.md + MEMORY_REFERENCE.md stubs created | AGENTS.md, memory/, graphify-out/ |
-| 2026-05-24 | fix: rename cloudflare.toml → wrangler.toml for Wrangler auto-detection; added .gitignore | wrangler.toml, .gitignore |
+| 2026-05-24 | fix: align wrangler.toml project name `salvatorepesti-com` → `salvatorepesti` to match Cloudflare Pages project | wrangler.toml |
+| 2026-05-24 | content: replace fictional case studies with real client work — Case 01 → MartaHowell Jewellery (Cloudflare Workers, D1, R2, FileMaker pipeline); Case 02 → reel-engine (automated YouTube pipeline, 500hrs/day); About: removed inaccurate "founders and engineering leaders" claim | index.html |
+| 2026-05-24 | graph node names for case studies are stale (AST-only regraph preserves old LLM names) — run `/graphify --update` to re-extract semantic nodes after content change | graphify-out/ |
+| 2026-05-24 | content: remove fictional Case 03 — Case 03 (Custom Workflow Tooling / Media Client) section removed from index.html; Community 9 removed from MEMORY_MAP.md | index.html |
+| 2026-05-24 | fix: add Cache-Control: public, max-age=0, must-revalidate to /* in _headers to prevent stale HTML at Cloudflare edge | _headers |
+| 2026-05-24 | content: update case study dates — Case 01 and Case 02 year changed from 2024 to 2026 in `<span>· 2026 / Ongoing</span>` | index.html |
+| 2026-05-24 | fix: replace 4 generic validator rules (data.js, sftp, assets, mobile) with 3 project-specific rules — `_rule_no_inline_styles`, `_rule_email_protection_intact`, `_rule_csp_not_weakened`; graph: `files_touched_in_diff()` now 4 edges, `added_lines_for_file()` and `_rule_email_protection_intact()` new god nodes at 4 edges | tools/validator_rules.py |
 

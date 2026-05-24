@@ -7,9 +7,17 @@
     "mtime": 1779610084.469569,
     "hash": "9a33f2af116fc3a5cb2646d9053f814f"
   },
+  "/home/craftworkson/dev/salvatorepesti.com/tools/validator_rules.py": {
+    "mtime": 1779619679.184187,
+    "hash": "ebea394f486bc14e31c06ac58313292c"
+  },
   "/home/craftworkson/dev/salvatorepesti.com/tools/meta_controller.py": {
     "mtime": 1779610084.4699872,
     "hash": "5e2f1924e6e37664a873a4a4cec83000"
+  },
+  "/home/craftworkson/dev/salvatorepesti.com/tests/smoke_test.py": {
+    "mtime": 1779620003.8878152,
+    "hash": "f27b6b908d4735e21cd5113004c68148"
   },
   "/home/craftworkson/dev/salvatorepesti.com/bin/meta-controller": {
     "mtime": 1779610084.4519525,
@@ -24,27 +32,27 @@
     "hash": "6b707be07d1e5d1204f755f5fca95b4d"
   },
   "/home/craftworkson/dev/salvatorepesti.com/AGENTS.md": {
-    "mtime": 1779614259.977293,
-    "hash": "878e442c361d8f76abf0f6c441ae14ff"
+    "mtime": 1779619887.4863865,
+    "hash": "41ebefb26ddc2c050d627e7561232678"
   },
   "/home/craftworkson/dev/salvatorepesti.com/index.html": {
-    "mtime": 1779611601.555651,
-    "hash": "850d4a6812dc20b7e8693c3836157c38"
+    "mtime": 1779619453.1085124,
+    "hash": "b9f1f391ceede77566e5b89f6365243f"
   },
   "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY_MAP.md": {
-    "mtime": 1779614273.192658,
-    "hash": "2a3d8e35ab6b5b76c79950ada9108e4c"
+    "mtime": 1779619910.6242728,
+    "hash": "2aaad572c589f542726e2eb98aaf5fe6"
   },
   "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY_REFERENCE.md": {
     "mtime": 1779612283.8668687,
     "hash": "0db6b5c3423713ec6a91a118ab2d40c7"
   },
   "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY.md": {
-    "mtime": 1779614246.0466573,
-    "hash": "d39070562fc4ad72f277244aa62a07c1"
+    "mtime": 1779619864.913095,
+    "hash": "6f702eb99465b7e2809ccec31e1fe080"
   },
   "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY_CHANGELOG.md": {
-    "mtime": 1779614270.4002914,
-    "hash": "051cc76fb594bc0879567c36e9a9d903"
+    "mtime": 1779618144.8066971,
+    "hash": "17096c13b1d09b591ee37e4d81eb35d7"
   }
 }

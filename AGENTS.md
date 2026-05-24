@@ -1,6 +1,6 @@
 # salvatorepesti.com — AGENTS.md
-# Specialized agent team for 64 nodes.
-# Last updated: 2026-05-24 (d06cd53)
+# Specialized agent team for 72 nodes.
+# Last updated: 2026-05-24 (5d985fa)
 
 ---
 
@@ -10,7 +10,7 @@
 |------|----------------|
 | ALL tasks — entry point (read first) | `agents/dispatcher.prompt` |
 | Edit `index.html`, `css/`, `js/`, `_headers`, `_redirects`, `wrangler.toml`, `.gitignore` | `agents/html-agent.prompt` |
-| Edit `tools/validator.py`, `tools/meta_controller.py`, `bin/` | `agents/tooling-agent.prompt` |
+| Edit `tools/validator.py`, `tools/validator_rules.py`, `tools/meta_controller.py`, `bin/` | `agents/tooling-agent.prompt` |
 | Doc sync after commit / MEMORY.md / MEMORY_MAP.md | `agents/memory-keeper.prompt` |
 | Security review — auth, I/O, external scripts, credentials | `agents/security-engineer.prompt` |
 | Validate any output before applying to disk | `agents/validator.prompt` |
@@ -63,20 +63,22 @@ Cross-agent task: read both relevant prompt files. No others.
 
 ## God Nodes — never touch without full cross-agent audit
 
-Graph source: `graphify-out/GRAPH_REPORT.md` · 64 nodes · 89 edges · last run 2026-05-24
+Graph source: `graphify-out/GRAPH_REPORT.md` · 72 nodes · 100 edges · last run 2026-05-24
 
 | Node | Edges | File | Owner | Notes |
 |------|-------|------|-------|-------|
 | `salvatorepesti.com — Personal Portfolio Site` | 29 | `index.html + css/ + js/` | @html-agent | Full cross-agent audit required |
 | `MetaController` | 5 | `tools/meta_controller.py` | @tooling-agent | Retry loop core — changes cascade to bin/meta-controller |
 | `Cloudflare Ecosystem` | 5 | `index.html + _headers` | @html-agent | Verify Cloudflare scripts intact |
-| `files_in_diff()` | 4 | `tools/validator.py` | @tooling-agent | Used by 3 validator rules — signature change breaks all |
-| `_rule_sftp_deploy_logic_gate()` | 4 | `tools/validator.py` | @tooling-agent | Bridges community 7→3; deploy gate logic |
+| `files_in_diff()` | 4 | `tools/validator.py` | @tooling-agent | Used by validator rules — signature change breaks all |
+| `files_touched_in_diff()` | 4 | `tools/validator.py` | @tooling-agent | Includes new files — used by _rule_email_protection_intact |
+| `added_lines_for_file()` | 4 | `tools/validator.py` | @tooling-agent | File-scoped line extractor — used by inline-style and CSP rules |
+| `_rule_sftp_deploy_logic_gate()` | 4 | `tools/validator.py` | @tooling-agent | Universal fallback — NOT active (overridden by validator_rules.py) |
+| `_rule_email_protection_intact()` | 4 | `tools/validator_rules.py` | @tooling-agent + @html-agent | Prevents removal of CF email-decode.min.js — Rule 2: human review |
 | `Edge Infrastructure` | 4 | `index.html + _headers + wrangler.toml` | @html-agent | Cache/CDN config must not regress |
 | `Secure Web Architecture` | 4 | `index.html + _headers` | @html-agent + @security-engineer | Parallel security review required |
-| `Case 02 — SaaS p95 TTFB Reduction 71%` | 4 | `index.html` | @html-agent | Owner confirmation before changing metrics |
-| `files_touched_in_diff()` | 3 | `tools/validator.py` | @tooling-agent | Distinct from files_in_diff() — includes new files |
-| `added_lines()` | 3 | `tools/validator.py` | @tooling-agent | Scoped to file hunks — used by path/parity rules |
+| `Case 02 — reel-engine — fully automated YouTube content production pipeline` | 4 | `index.html` | @html-agent | Owner confirmation before changing metrics |
+| `added_lines()` | 3 | `tools/validator.py` | @tooling-agent | All added lines (not file-scoped) — used by universal fallback rules |
 | `Salvatore Pesti` | 3 | `index.html` | @html-agent | Owner confirmation before changing bio/identity |
 | `CDN & Caching Strategies` | 3 | `index.html` | @html-agent | Performance claims — verify before editing |
 | `Security Auditing & Hardening` | 3 | `index.html` | @html-agent + @security-engineer | Parallel security review required |

@@ -48,13 +48,13 @@ The holography tooling layer for salvatorepesti.com. Consists of:
 
 ## GOD NODES IN YOUR DOMAIN
 
-None of the validator/tooling community nodes are classified as god nodes.
-Key hub functions:
-- `files_in_diff()` — 4 edges (bridges communities 6 → 3, 4)
-- `_rule_sftp_deploy_logic_gate()` — 4 edges (bridges communities 4 → 3, 6)
+Key hub functions (4+ edges — cross-agent audit before changing):
+- `files_in_diff()` — 4 edges (parses `--- a/` headers; does NOT catch new files)
+- `files_touched_in_diff()` — 4 edges (parses `+++ b/` headers; includes new files)
+- `added_lines_for_file()` — 4 edges (file-scoped line extractor; used by inline-style + CSP rules)
+- `_rule_email_protection_intact()` — 4 edges (in validator_rules.py; Rule 2 → human escalation)
+- `_rule_sftp_deploy_logic_gate()` — 4 edges (universal fallback in validator.py — NOT active; overridden by validator_rules.py)
 - `MetaController` — 5 edges
-- `files_touched_in_diff()` — 3 edges
-- `added_lines()` — 3 edges
 
 ---
 
