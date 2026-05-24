@@ -1,7 +1,7 @@
 # Graph Report - salvatorepesti.com  (2026-05-24)
 
 ## Corpus Check
-- 5 files · ~6,546 words
+- 5 files · ~6,630 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1e2ff00a`
+- Built from commit: `cc0c91ce`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -44,7 +44,7 @@
 - `Cloudflare Ecosystem` --conceptually_related_to--> `CDN & Caching Strategies`  [INFERRED]
   salvatorepesti.com.html → salvatorepesti.com.html  _Bridges community 3 → community 6_
 - `_rule_sftp_deploy_logic_gate()` --calls--> `files_in_diff()`  [EXTRACTED]
-  tools/validator.py → tools/validator.py  _Bridges community 8 → community 5_
+  tools/validator.py → tools/validator.py  _Bridges community 7 → community 5_
 - `salvatorepesti.com — Personal Portfolio Site` --references--> `Salvatore Pesti`  [EXTRACTED]
   salvatorepesti.com.html → salvatorepesti.com.html  _Bridges community 1 → community 2_
 - `salvatorepesti.com — Personal Portfolio Site` --references--> `Authentication Systems`  [EXTRACTED]
@@ -87,11 +87,11 @@ Nodes (5): Automated Release Pipelines, Case 02 — SaaS p95 TTFB Reduction 71%,
 
 ### Community 7 - "Community 7"
 Cohesion: 0.5
-Nodes (4): files_touched_in_diff(), Desktop UI changes must be paired with a matching mobile change in the same diff, Files touched in a diff via +++ b/ headers. Includes new files where source side, _rule_mobile_desktop_parity()
+Nodes (4): files_in_diff(), Files present in a diff via --- a/ headers. Does not catch new files (use files_, js/data.js is generated — must not be edited directly., _rule_no_direct_data_js_edit()
 
 ### Community 8 - "Community 8"
 Cohesion: 0.5
-Nodes (4): files_in_diff(), Files present in a diff via --- a/ headers. Does not catch new files (use files_, js/data.js is generated — must not be edited directly., _rule_no_direct_data_js_edit()
+Nodes (4): files_touched_in_diff(), Desktop UI changes must be paired with a matching mobile change in the same diff, Files touched in a diff via +++ b/ headers. Includes new files where source side, _rule_mobile_desktop_parity()
 
 ## Knowledge Gaps
 - **19 isolated node(s):** `Files present in a diff via --- a/ headers. Does not catch new files (use files_`, `Files touched in a diff via +++ b/ headers. Includes new files where source side`, `Added lines scoped to a specific file's hunks only.`, `js/data.js is generated — must not be edited directly.`, `tools/sftp_sync.py must not gain new logic — comment-only changes are allowed.` (+14 more)
@@ -103,9 +103,9 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `salvatorepesti.com — Personal Portfolio Site` connect `Community 1` to `Community 2`, `Community 3`, `Community 6`?**
   _High betweenness centrality (0.193) - this node is a cross-community bridge._
-- **Why does `files_in_diff()` connect `Community 8` to `Community 4`, `Community 5`?**
+- **Why does `files_in_diff()` connect `Community 7` to `Community 4`, `Community 5`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `_rule_sftp_deploy_logic_gate()` connect `Community 5` to `Community 8`, `Community 4`?**
+- **Why does `_rule_sftp_deploy_logic_gate()` connect `Community 5` to `Community 4`, `Community 7`?**
   _High betweenness centrality (0.010) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `Cloudflare Ecosystem` (e.g. with `Edge Infrastructure` and `CDN & Caching Strategies`) actually correct?**
   _`Cloudflare Ecosystem` has 2 INFERRED edges - model-reasoned connections that need verification._

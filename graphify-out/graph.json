@@ -79,7 +79,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L27",
       "id": "tools_validator_files_in_diff",
-      "community": 8,
+      "community": 7,
       "norm_label": "files_in_diff()"
     },
     {
@@ -88,7 +88,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L32",
       "id": "tools_validator_files_touched_in_diff",
-      "community": 7,
+      "community": 8,
       "norm_label": "files_touched_in_diff()"
     },
     {
@@ -124,7 +124,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L71",
       "id": "tools_validator_rule_no_direct_data_js_edit",
-      "community": 8,
+      "community": 7,
       "norm_label": "_rule_no_direct_data_js_edit()"
     },
     {
@@ -151,7 +151,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L101",
       "id": "tools_validator_rule_mobile_desktop_parity",
-      "community": 7,
+      "community": 8,
       "norm_label": "_rule_mobile_desktop_parity()"
     },
     {
@@ -178,7 +178,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L28",
       "id": "tools_validator_rationale_28",
-      "community": 8,
+      "community": 7,
       "norm_label": "files present in a diff via --- a/ headers. does not catch new files (use files_"
     },
     {
@@ -187,7 +187,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L33",
       "id": "tools_validator_rationale_33",
-      "community": 7,
+      "community": 8,
       "norm_label": "files touched in a diff via +++ b/ headers. includes new files where source side"
     },
     {
@@ -205,7 +205,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L72",
       "id": "tools_validator_rationale_72",
-      "community": 8,
+      "community": 7,
       "norm_label": "js/data.js is generated \u2014 must not be edited directly."
     },
     {
@@ -232,7 +232,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L102",
       "id": "tools_validator_rationale_102",
-      "community": 7,
+      "community": 8,
       "norm_label": "desktop ui changes must be paired with a matching mobile change in the same diff"
     },
     {
@@ -1694,5 +1694,5 @@
       "source_file": "salvatorepesti.com.html"
     }
   ],
-  "built_at_commit": "1e2ff00a0f43f4aae0b3ba4f636d65716894b2fb"
+  "built_at_commit": "cc0c91ce86a07e9fb5c9dfd8e234ea7ad6fe1288"
 }

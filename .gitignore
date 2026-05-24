@@ -1,0 +1,18 @@
+# Claude Code — local machine-specific permissions
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Graphify — regeneratable AST cache
+graphify-out/cache/
+
+# Meta-controller failure logs
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
