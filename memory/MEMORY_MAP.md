@@ -8,7 +8,7 @@
 
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `tools/meta_controller.py` | `MetaController`, `FailBlock`, `RetryPlan`, `from_text()`, `_infer_category()` | **YES — 5 edges** | Retry loop core — cross-agent audit before changing |
+| `tools/meta_controller.py` | `MetaController`, `FailBlock`, `RetryPlan`, `from_text()`, `_infer_category()` | **YES — 6 edges** | Retry loop core — cross-agent audit before changing |
 | `bin/meta-controller` | `run_agent()`, `run_validator()`, `dry_run()`, `main()` | — | Entry: `bin/meta-controller --task "..."` |
 
 ## Community 1 — Portfolio Presentation (index.html + js/main.js)
@@ -77,7 +77,7 @@
 | `tools/validator.py` | `files_in_diff()`, `files_touched_in_diff()`, `added_lines()`, `added_lines_for_file()`, `main()` | @tooling-agent | Run: `git diff \| python3 tools/validator.py` |
 | `tools/meta_controller.py` | `MetaController`, `FailBlock`, `RetryPlan`, `build_retry_plan_for_attempt()`, `from_text()`, `_infer_category()` | @tooling-agent | Retry loop |
 | `bin/meta-controller` | `run_agent()`, `run_validator()`, `dry_run()`, `main()` | @tooling-agent | Entry: `bin/meta-controller --task "..."` |
-| `tests/smoke_test.py` | Smoke tests | @tooling-agent | Does not exist yet — skip until created |
+| `tests/smoke_test.py` | `_make_diff()`, `_run_validator()`, 25 test functions | @tooling-agent | `_run_validator()` **10 edges** + `_make_diff()` **9 edges** god nodes; run: `python3 -m pytest tests/smoke_test.py -v` |
 | `logs/` | Failure reports | @meta-controller | `meta-controller-YYYY-MM-DD-HH-MM-SS.md` |
 | `index.html` | All markup, Cloudflare email protection, case studies | @html-agent | Entry point — all god nodes declared here |
 | `css/fonts.css` | Google Fonts @import | @html-agent | Load order: fonts.css → main.css |

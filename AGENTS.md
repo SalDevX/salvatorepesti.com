@@ -1,6 +1,6 @@
 # salvatorepesti.com — AGENTS.md
-# Specialized agent team for 72 nodes.
-# Last updated: 2026-05-24 (5d985fa)
+# Specialized agent team for 100 nodes.
+# Last updated: 2026-05-24 (80cb252)
 
 ---
 
@@ -63,12 +63,14 @@ Cross-agent task: read both relevant prompt files. No others.
 
 ## God Nodes — never touch without full cross-agent audit
 
-Graph source: `graphify-out/GRAPH_REPORT.md` · 72 nodes · 100 edges · last run 2026-05-24
+Graph source: `graphify-out/GRAPH_REPORT.md` · 100 nodes · 146 edges · last run 2026-05-24
 
 | Node | Edges | File | Owner | Notes |
 |------|-------|------|-------|-------|
 | `salvatorepesti.com — Personal Portfolio Site` | 29 | `index.html + css/ + js/` | @html-agent | Full cross-agent audit required |
-| `MetaController` | 5 | `tools/meta_controller.py` | @tooling-agent | Retry loop core — changes cascade to bin/meta-controller |
+| `_run_validator()` | 10 | `tests/smoke_test.py` + `tools/meta_controller.py` | @tooling-agent | Test harness core — changes break all smoke tests |
+| `_make_diff()` | 9 | `tests/smoke_test.py` | @tooling-agent | Diff fixture builder — changes break all smoke tests |
+| `MetaController` | 6 | `tools/meta_controller.py` | @tooling-agent | Retry loop core — changes cascade to bin/meta-controller |
 | `Cloudflare Ecosystem` | 5 | `index.html + _headers` | @html-agent | Verify Cloudflare scripts intact |
 | `files_in_diff()` | 4 | `tools/validator.py` | @tooling-agent | Used by validator rules — signature change breaks all |
 | `files_touched_in_diff()` | 4 | `tools/validator.py` | @tooling-agent | Includes new files — used by _rule_email_protection_intact |
@@ -86,5 +88,7 @@ Graph source: `graphify-out/GRAPH_REPORT.md` · 72 nodes · 100 edges · last ru
 ### Critical Path
 
 `salvatorepesti.com — Personal Portfolio Site` (index.html + css/ + js/) has 29 edges — changes cascade across the graph.
-`MetaController` (tools/meta_controller.py) has 5 edges — retry loop core; changes cascade to bin/meta-controller.
+`MetaController` (tools/meta_controller.py) has 6 edges — retry loop core; changes cascade to bin/meta-controller.
+`_run_validator()` (tests/smoke_test.py) has 10 edges — test harness core; changes break all smoke tests.
+`_make_diff()` (tests/smoke_test.py) has 9 edges — diff fixture builder; changes break all smoke tests.
 Declare in task description before writing. Full cross-agent audit required.

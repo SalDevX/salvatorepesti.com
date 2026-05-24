@@ -1647,9 +1647,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "contains",
@@ -1657,9 +1657,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_make_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_make_diff"
     },
     {
       "relation": "contains",
@@ -1667,9 +1667,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_validator_import",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_validator_import"
     },
     {
       "relation": "contains",
@@ -1677,9 +1677,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_meta_controller_import",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_meta_controller_import"
     },
     {
       "relation": "contains",
@@ -1687,9 +1687,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_validator_empty_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_validator_empty_diff"
     },
     {
       "relation": "contains",
@@ -1697,9 +1697,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_rule1_fails_on_inline_style",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_rule1_fails_on_inline_style"
     },
     {
       "relation": "contains",
@@ -1707,9 +1707,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_rule1_passes_on_class_attribute",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_rule1_passes_on_class_attribute"
     },
     {
       "relation": "contains",
@@ -1717,9 +1717,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_rule1_only_fires_on_index_html",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_rule1_only_fires_on_index_html"
     },
     {
       "relation": "contains",
@@ -1727,9 +1727,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_rule2_fails_when_email_decode_removed",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_rule2_fails_when_email_decode_removed"
     },
     {
       "relation": "contains",
@@ -1737,9 +1737,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_rule2_passes_when_email_decode_untouched",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_rule2_passes_when_email_decode_untouched"
     },
     {
       "relation": "contains",
@@ -1747,9 +1747,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_rule3_fails_on_unsafe_eval",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_rule3_fails_on_unsafe_eval"
     },
     {
       "relation": "contains",
@@ -1757,9 +1757,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_rule3_fails_on_wildcard_script_src",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_rule3_fails_on_wildcard_script_src"
     },
     {
       "relation": "contains",
@@ -1767,9 +1767,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_rule3_passes_on_safe_csp_change",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_rule3_passes_on_safe_csp_change"
     },
     {
       "relation": "contains",
@@ -1777,9 +1777,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L144",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_failblock_from_text_parses_category",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_failblock_from_text_parses_category"
     },
     {
       "relation": "contains",
@@ -1787,9 +1787,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_failblock_infers_category_from_signal",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_failblock_infers_category_from_signal"
     },
     {
       "relation": "contains",
@@ -1797,9 +1797,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_metacontroller_escalates_to_human_on_rule2",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_metacontroller_escalates_to_human_on_rule2"
     },
     {
       "relation": "contains",
@@ -1807,9 +1807,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_index_html_exists",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_index_html_exists"
     },
     {
       "relation": "contains",
@@ -1817,9 +1817,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_css_files_exist",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_css_files_exist"
     },
     {
       "relation": "contains",
@@ -1827,9 +1827,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_js_main_exists",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_js_main_exists"
     },
     {
       "relation": "contains",
@@ -1837,9 +1837,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_headers_exists",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_headers_exists"
     },
     {
       "relation": "contains",
@@ -1847,9 +1847,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_wrangler_toml_exists",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_wrangler_toml_exists"
     },
     {
       "relation": "contains",
@@ -1857,9 +1857,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_agent_prompts_exist",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_agent_prompts_exist"
     },
     {
       "relation": "contains",
@@ -1867,9 +1867,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L210",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_memory_files_exist",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_memory_files_exist"
     },
     {
       "relation": "contains",
@@ -1877,9 +1877,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L215",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_validator_cli_is_runnable",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_validator_cli_is_runnable"
     },
     {
       "relation": "contains",
@@ -1887,9 +1887,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L227",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_email_protection_in_html",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_email_protection_in_html"
     },
     {
       "relation": "contains",
@@ -1897,9 +1897,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_no_inline_styles_in_html",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_no_inline_styles_in_html"
     },
     {
       "relation": "contains",
@@ -1907,9 +1907,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L239",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_py",
-      "target": "tests_smoke_test_test_csp_not_weakened_in_headers",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_test_csp_not_weakened_in_headers"
     },
     {
       "relation": "calls",
@@ -1918,9 +1918,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_validator_empty_diff",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "calls",
@@ -1929,9 +1929,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule1_fails_on_inline_style",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "calls",
@@ -1940,9 +1940,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule1_passes_on_class_attribute",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "calls",
@@ -1951,9 +1951,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule1_only_fires_on_index_html",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "calls",
@@ -1962,9 +1962,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule2_fails_when_email_decode_removed",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "calls",
@@ -1973,9 +1973,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule2_passes_when_email_decode_untouched",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "calls",
@@ -1984,9 +1984,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule3_fails_on_unsafe_eval",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "calls",
@@ -1995,9 +1995,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule3_fails_on_wildcard_script_src",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "calls",
@@ -2006,9 +2006,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule3_passes_on_safe_csp_change",
-      "target": "tests_smoke_test_run_validator",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_run_validator"
     },
     {
       "relation": "calls",
@@ -2017,9 +2017,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule1_fails_on_inline_style",
-      "target": "tests_smoke_test_make_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_make_diff"
     },
     {
       "relation": "calls",
@@ -2028,9 +2028,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule1_passes_on_class_attribute",
-      "target": "tests_smoke_test_make_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_make_diff"
     },
     {
       "relation": "calls",
@@ -2039,9 +2039,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule1_only_fires_on_index_html",
-      "target": "tests_smoke_test_make_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_make_diff"
     },
     {
       "relation": "calls",
@@ -2050,9 +2050,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule2_fails_when_email_decode_removed",
-      "target": "tests_smoke_test_make_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_make_diff"
     },
     {
       "relation": "calls",
@@ -2061,9 +2061,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule2_passes_when_email_decode_untouched",
-      "target": "tests_smoke_test_make_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_make_diff"
     },
     {
       "relation": "calls",
@@ -2072,9 +2072,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule3_fails_on_unsafe_eval",
-      "target": "tests_smoke_test_make_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_make_diff"
     },
     {
       "relation": "calls",
@@ -2083,9 +2083,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule3_fails_on_wildcard_script_src",
-      "target": "tests_smoke_test_make_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_make_diff"
     },
     {
       "relation": "calls",
@@ -2094,9 +2094,9 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L135",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_smoke_test_test_rule3_passes_on_safe_csp_change",
-      "target": "tests_smoke_test_make_diff",
-      "confidence_score": 1.0
+      "target": "tests_smoke_test_make_diff"
     },
     {
       "relation": "references",
@@ -2611,5 +2611,5 @@
       "source_file": "salvatorepesti.com.html"
     }
   ],
-  "built_at_commit": "5d985fa0872ddb1027b3382c2fa9c71afa6871b7"
+  "built_at_commit": "80cb252ebaeb7caf4bf02e758fd3f6ff407ef458"
 }

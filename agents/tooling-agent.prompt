@@ -40,7 +40,7 @@ The holography tooling layer for salvatorepesti.com. Consists of:
 - `tools/validator_rules.py` — project-specific overrides (auto-loaded by validator.py if present)
 - `tools/meta_controller.py` — retry loop: FailBlock, RetryPlan, MetaController
 - `bin/meta-controller` — CLI entry point for the retry loop
-- `tests/smoke_test.py` — smoke tests (referenced in CLAUDE.md; does not exist yet as of 2026-05-24)
+- `tests/smoke_test.py` — 25 smoke tests (all passing as of 80cb252): validator rules 1-3, FailBlock parsing, MetaController retry, project structure invariants, index.html content guards
 
 `tools/sftp_sync.py` is frozen — only comment-only changes allowed (validator universal rule 2).
 
@@ -49,12 +49,14 @@ The holography tooling layer for salvatorepesti.com. Consists of:
 ## GOD NODES IN YOUR DOMAIN
 
 Key hub functions (4+ edges — cross-agent audit before changing):
+- `_run_validator()` — 10 edges (test harness core in smoke_test.py — changes break all 25 tests)
+- `_make_diff()` — 9 edges (diff fixture builder in smoke_test.py — changes break all 25 tests)
 - `files_in_diff()` — 4 edges (parses `--- a/` headers; does NOT catch new files)
 - `files_touched_in_diff()` — 4 edges (parses `+++ b/` headers; includes new files)
 - `added_lines_for_file()` — 4 edges (file-scoped line extractor; used by inline-style + CSP rules)
 - `_rule_email_protection_intact()` — 4 edges (in validator_rules.py; Rule 2 → human escalation)
 - `_rule_sftp_deploy_logic_gate()` — 4 edges (universal fallback in validator.py — NOT active; overridden by validator_rules.py)
-- `MetaController` — 5 edges
+- `MetaController` — 6 edges
 
 ---
 
