@@ -1,6 +1,6 @@
 # salvatorepesti.com — AGENTS.md
 # Specialized agent team for 64 nodes.
-# Last updated: 2026-05-24
+# Last updated: 2026-05-24 (d06cd53)
 
 ---
 
@@ -9,7 +9,7 @@
 | Task | Read this file |
 |------|----------------|
 | ALL tasks — entry point (read first) | `agents/dispatcher.prompt` |
-| Edit `index.html`, `css/`, `js/`, `_headers`, `_redirects`, `cloudflare.toml` | `agents/html-agent.prompt` |
+| Edit `index.html`, `css/`, `js/`, `_headers`, `_redirects`, `wrangler.toml`, `.gitignore` | `agents/html-agent.prompt` |
 | Edit `tools/validator.py`, `tools/meta_controller.py`, `bin/` | `agents/tooling-agent.prompt` |
 | Doc sync after commit / MEMORY.md / MEMORY_MAP.md | `agents/memory-keeper.prompt` |
 | Security review — auth, I/O, external scripts, credentials | `agents/security-engineer.prompt` |
@@ -35,7 +35,7 @@ Cross-agent task: read both relevant prompt files. No others.
 ## Global invariants — apply to every task, every agent
 
 **Hard rules — never break:**
-- Never modify god nodes without declaring in task description: `salvatorepesti.com — Personal Portfolio Site` (index.html, 29 edges), `Cloudflare Ecosystem` (index.html + _headers, 5 edges), `Edge Infrastructure` (index.html + _headers + cloudflare.toml, 4 edges)
+- Never modify god nodes without declaring in task description: `salvatorepesti.com — Personal Portfolio Site` (index.html, 29 edges), `Cloudflare Ecosystem` (index.html + _headers, 5 edges), `Edge Infrastructure` (index.html + _headers + wrangler.toml, 4 edges)
 - Run `graphify update .` after every code change (zero API cost — AST only)
 
 **After every code change:**
@@ -72,7 +72,7 @@ Graph source: `graphify-out/GRAPH_REPORT.md` · 64 nodes · 89 edges · last run
 | `Cloudflare Ecosystem` | 5 | `index.html + _headers` | @html-agent | Verify Cloudflare scripts intact |
 | `files_in_diff()` | 4 | `tools/validator.py` | @tooling-agent | Used by 3 validator rules — signature change breaks all |
 | `_rule_sftp_deploy_logic_gate()` | 4 | `tools/validator.py` | @tooling-agent | Bridges community 7→3; deploy gate logic |
-| `Edge Infrastructure` | 4 | `index.html + _headers + cloudflare.toml` | @html-agent | Cache/CDN config must not regress |
+| `Edge Infrastructure` | 4 | `index.html + _headers + wrangler.toml` | @html-agent | Cache/CDN config must not regress |
 | `Secure Web Architecture` | 4 | `index.html + _headers` | @html-agent + @security-engineer | Parallel security review required |
 | `Case 02 — SaaS p95 TTFB Reduction 71%` | 4 | `index.html` | @html-agent | Owner confirmation before changing metrics |
 | `files_touched_in_diff()` | 3 | `tools/validator.py` | @tooling-agent | Distinct from files_in_diff() — includes new files |

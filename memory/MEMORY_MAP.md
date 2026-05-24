@@ -37,13 +37,13 @@
 |------|-----------------------|-----------|-------|
 | `index.html` | `Case 02 — SaaS p95 TTFB Reduction 71%`, `CDN & Caching Strategies`, `Frontend Performance Optimization`, `Infrastructure & Deployment Automation`, `Automated Release Pipelines` | `Case 02` **4 edges**, `CDN & Caching Strategies` **3 edges** | Performance metrics — owner confirmation before editing |
 
-## Community 5 — Cloudflare / Edge (index.html + _headers + cloudflare.toml)
+## Community 5 — Cloudflare / Edge (index.html + _headers + wrangler.toml)
 
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
 | `index.html` | `Case 01 — Cloudflare-native Auth Layer for Fintech`, `API Design & Edge Compute`, `Authentication Systems` | — | |
 | `index.html` + `_headers` | `Cloudflare Ecosystem`, `Edge Infrastructure` | `Cloudflare Ecosystem` **5 edges**, `Edge Infrastructure` **4 edges** | CSP + CDN config — parallel security review |
-| `cloudflare.toml` | Pages config — name, build output dir | — | No credentials — safe to commit |
+| `wrangler.toml` | Pages config — name, build output dir | — | No credentials — safe to commit |
 
 ## Community 6 — Security (index.html + _headers)
 
@@ -96,4 +96,5 @@
 | `js/main.js` | `clock()`, deploy date stamp, `reveal()` | @html-agent | Replaces all former inline scripts |
 | `_headers` | CSP, HSTS, cache-control per path | @html-agent + @security-engineer | Update CSP when adding new external origins |
 | `_redirects` | `/salvatorepesti.com.html → /`, `/index.html → /` | @html-agent | Cloudflare Pages redirect rules |
-| `cloudflare.toml` | Pages config — name, build output dir | @html-agent | No credentials — safe to commit |
+| `wrangler.toml` | Pages config — name, build output dir | @html-agent | Wrangler auto-detects this filename; renamed from cloudflare.toml d06cd53 |
+| `.gitignore` | Git ignore rules | @html-agent | Added d06cd53 |

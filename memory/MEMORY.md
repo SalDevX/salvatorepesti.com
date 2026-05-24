@@ -20,7 +20,7 @@
 | Email protection | `index.html` | Cloudflare email-decode.min.js — must not be removed |
 | Security headers | `_headers` | CSP, HSTS, cache-control — Cloudflare Pages _headers format |
 | Redirects | `_redirects` | `/salvatorepesti.com.html → /` and `/index.html → /` |
-| CF config | `cloudflare.toml` | Pages name + build output dir |
+| CF config | `wrangler.toml` | Pages name + build output dir — Wrangler auto-detects this name |
 
 ### Data Flow
 
@@ -66,4 +66,5 @@ git push origin main
 | 2026-05-24 | domain-agent-builder: created html-agent, tooling-agent, security-engineer prompts; updated AGENTS.md + dispatcher.prompt | agents/ |
 | 2026-05-24 | refactor: single-file → multi-file; created index.html, css/main.css, css/fonts.css, js/main.js, _headers, _redirects, cloudflare.toml; removed 4 inline styles (→ .ext-arrow class); added CSP via _headers; updated all agent prompts + MEMORY_MAP.md | index.html, css/, js/, _headers |
 | 2026-05-24 | chore: sync agent metadata + graph after refactor — AGENTS.md god nodes synced (64 nodes, 89 edges, 10 communities); MEMORY_MAP.md rebuilt (12 sections); graphify-out/ regenerated; MEMORY_CHANGELOG.md + MEMORY_REFERENCE.md stubs created | AGENTS.md, memory/, graphify-out/ |
+| 2026-05-24 | fix: rename cloudflare.toml → wrangler.toml for Wrangler auto-detection; added .gitignore | wrangler.toml, .gitignore |
 
