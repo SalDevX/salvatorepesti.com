@@ -1,5 +1,5 @@
 # salvatorepesti.com — AGENTS.md
-# Specialized agent team for 30 nodes.
+# Specialized agent team for 64 nodes.
 # Last updated: 2026-05-24
 
 ---
@@ -63,20 +63,26 @@ Cross-agent task: read both relevant prompt files. No others.
 
 ## God Nodes — never touch without full cross-agent audit
 
-Graph source: `graphify-out/GRAPH_REPORT.md` · 30 nodes · 47 edges · last run 2026-05-24
+Graph source: `graphify-out/GRAPH_REPORT.md` · 64 nodes · 89 edges · last run 2026-05-24
 
 | Node | Edges | File | Owner | Notes |
 |------|-------|------|-------|-------|
 | `salvatorepesti.com — Personal Portfolio Site` | 29 | `index.html + css/ + js/` | @html-agent | Full cross-agent audit required |
-| `Cloudflare Ecosystem` | 5 | `index.html + css/ + js/` | @html-agent | Verify Cloudflare scripts intact |
-| `Edge Infrastructure` | 4 | `index.html + css/ + js/` | @html-agent | Cache/CDN config must not regress |
-| `Secure Web Architecture` | 4 | `index.html + css/ + js/` | @html-agent + @security-engineer | Parallel security review required |
-| `Case 02 — SaaS p95 TTFB Reduction 71%` | 4 | `index.html + css/ + js/` | @html-agent | Owner confirmation before changing metrics |
-| `Salvatore Pesti` | 3 | `index.html + css/ + js/` | @html-agent | Owner confirmation before changing bio/identity |
-| `CDN & Caching Strategies` | 3 | `index.html + css/ + js/` | @html-agent | Performance claims — verify before editing |
-| `Security Auditing & Hardening` | 3 | `index.html + css/ + js/` | @html-agent + @security-engineer | Parallel security review required |
+| `MetaController` | 5 | `tools/meta_controller.py` | @tooling-agent | Retry loop core — changes cascade to bin/meta-controller |
+| `Cloudflare Ecosystem` | 5 | `index.html + _headers` | @html-agent | Verify Cloudflare scripts intact |
+| `files_in_diff()` | 4 | `tools/validator.py` | @tooling-agent | Used by 3 validator rules — signature change breaks all |
+| `_rule_sftp_deploy_logic_gate()` | 4 | `tools/validator.py` | @tooling-agent | Bridges community 7→3; deploy gate logic |
+| `Edge Infrastructure` | 4 | `index.html + _headers + cloudflare.toml` | @html-agent | Cache/CDN config must not regress |
+| `Secure Web Architecture` | 4 | `index.html + _headers` | @html-agent + @security-engineer | Parallel security review required |
+| `Case 02 — SaaS p95 TTFB Reduction 71%` | 4 | `index.html` | @html-agent | Owner confirmation before changing metrics |
+| `files_touched_in_diff()` | 3 | `tools/validator.py` | @tooling-agent | Distinct from files_in_diff() — includes new files |
+| `added_lines()` | 3 | `tools/validator.py` | @tooling-agent | Scoped to file hunks — used by path/parity rules |
+| `Salvatore Pesti` | 3 | `index.html` | @html-agent | Owner confirmation before changing bio/identity |
+| `CDN & Caching Strategies` | 3 | `index.html` | @html-agent | Performance claims — verify before editing |
+| `Security Auditing & Hardening` | 3 | `index.html` | @html-agent + @security-engineer | Parallel security review required |
 
 ### Critical Path
 
 `salvatorepesti.com — Personal Portfolio Site` (index.html + css/ + js/) has 29 edges — changes cascade across the graph.
+`MetaController` (tools/meta_controller.py) has 5 edges — retry loop core; changes cascade to bin/meta-controller.
 Declare in task description before writing. Full cross-agent audit required.

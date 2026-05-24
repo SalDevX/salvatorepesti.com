@@ -66,14 +66,3 @@ git push origin main
 | 2026-05-24 | domain-agent-builder: created html-agent, tooling-agent, security-engineer prompts; updated AGENTS.md + dispatcher.prompt | agents/ |
 | 2026-05-24 | refactor: single-file → multi-file; created index.html, css/main.css, css/fonts.css, js/main.js, _headers, _redirects, cloudflare.toml; removed 4 inline styles (→ .ext-arrow class); added CSP via _headers; updated all agent prompts + MEMORY_MAP.md | index.html, css/, js/, _headers |
 
----
-
-## Memory Modules
-
-| File | Contents | Load when | Budget |
-|------|----------|-----------|--------|
-| `memory/MEMORY.md` | Status, architecture, recent fixes | Every session | ≤70 lines |
-| `memory/MEMORY_MAP.md` | Function/file ownership table | Every session | ≤95 lines |
-| `memory/MEMORY_CHANGELOG.md` | Append-only fix history | On demand — recent fix context only | unlimited |
-| `memory/MEMORY_INTELLIGENCE.md` | Rationale, gotchas, imperative patterns | On demand — before touching flagged areas | unlimited |
-| `memory/MEMORY_REFERENCE.md` | Schemas, deploy modes, lookup tables | On demand — when verifying a spec | unlimited |

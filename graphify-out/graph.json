@@ -52,7 +52,7 @@
       "source_file": "js/main.js",
       "source_location": "L1",
       "id": "js_main_js",
-      "community": 10,
+      "community": 9,
       "norm_label": "main.js"
     },
     {
@@ -61,7 +61,7 @@
       "source_file": "js/main.js",
       "source_location": "L4",
       "id": "js_main_tick",
-      "community": 10,
+      "community": 9,
       "norm_label": "tick()"
     },
     {
@@ -70,7 +70,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L1",
       "id": "tools_validator_py",
-      "community": 2,
+      "community": 4,
       "norm_label": "validator.py"
     },
     {
@@ -79,7 +79,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L27",
       "id": "tools_validator_files_in_diff",
-      "community": 7,
+      "community": 8,
       "norm_label": "files_in_diff()"
     },
     {
@@ -88,7 +88,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L32",
       "id": "tools_validator_files_touched_in_diff",
-      "community": 8,
+      "community": 7,
       "norm_label": "files_touched_in_diff()"
     },
     {
@@ -97,7 +97,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L37",
       "id": "tools_validator_added_lines",
-      "community": 3,
+      "community": 5,
       "norm_label": "added_lines()"
     },
     {
@@ -106,7 +106,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L45",
       "id": "tools_validator_added_lines_for_file",
-      "community": 11,
+      "community": 10,
       "norm_label": "added_lines_for_file()"
     },
     {
@@ -115,7 +115,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L59",
       "id": "tools_validator_removed_lines",
-      "community": 2,
+      "community": 4,
       "norm_label": "removed_lines()"
     },
     {
@@ -124,7 +124,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L71",
       "id": "tools_validator_rule_no_direct_data_js_edit",
-      "community": 7,
+      "community": 8,
       "norm_label": "_rule_no_direct_data_js_edit()"
     },
     {
@@ -133,7 +133,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L78",
       "id": "tools_validator_rule_sftp_deploy_logic_gate",
-      "community": 3,
+      "community": 5,
       "norm_label": "_rule_sftp_deploy_logic_gate()"
     },
     {
@@ -142,7 +142,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L89",
       "id": "tools_validator_rule_asset_path_consistency",
-      "community": 3,
+      "community": 5,
       "norm_label": "_rule_asset_path_consistency()"
     },
     {
@@ -151,7 +151,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L101",
       "id": "tools_validator_rule_mobile_desktop_parity",
-      "community": 8,
+      "community": 7,
       "norm_label": "_rule_mobile_desktop_parity()"
     },
     {
@@ -160,7 +160,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L130",
       "id": "tools_validator_load_project_rules",
-      "community": 2,
+      "community": 4,
       "norm_label": "_load_project_rules()"
     },
     {
@@ -169,7 +169,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L166",
       "id": "tools_validator_main",
-      "community": 2,
+      "community": 4,
       "norm_label": "main()"
     },
     {
@@ -178,7 +178,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L28",
       "id": "tools_validator_rationale_28",
-      "community": 7,
+      "community": 8,
       "norm_label": "files present in a diff via --- a/ headers. does not catch new files (use files_"
     },
     {
@@ -187,7 +187,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L33",
       "id": "tools_validator_rationale_33",
-      "community": 8,
+      "community": 7,
       "norm_label": "files touched in a diff via +++ b/ headers. includes new files where source side"
     },
     {
@@ -196,7 +196,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L46",
       "id": "tools_validator_rationale_46",
-      "community": 11,
+      "community": 10,
       "norm_label": "added lines scoped to a specific file's hunks only."
     },
     {
@@ -205,7 +205,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L72",
       "id": "tools_validator_rationale_72",
-      "community": 7,
+      "community": 8,
       "norm_label": "js/data.js is generated \u2014 must not be edited directly."
     },
     {
@@ -214,7 +214,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L79",
       "id": "tools_validator_rationale_79",
-      "community": 3,
+      "community": 5,
       "norm_label": "tools/sftp_sync.py must not gain new logic \u2014 comment-only changes are allowed."
     },
     {
@@ -223,7 +223,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L90",
       "id": "tools_validator_rationale_90",
-      "community": 3,
+      "community": 5,
       "norm_label": "asset filenames referenced in diffs must exist on disk in assets/."
     },
     {
@@ -232,7 +232,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L102",
       "id": "tools_validator_rationale_102",
-      "community": 8,
+      "community": 7,
       "norm_label": "desktop ui changes must be paired with a matching mobile change in the same diff"
     },
     {
@@ -241,7 +241,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L131",
       "id": "tools_validator_rationale_131",
-      "community": 2,
+      "community": 4,
       "norm_label": "load project-specific rules from tools/validator_rules.py if it exists.     the"
     },
     {
@@ -374,7 +374,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 2,
       "norm_label": "salvatore pesti",
       "id": "salvatorepesti_com_salvatore_pesti"
     },
@@ -387,7 +387,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 5,
+      "community": 2,
       "norm_label": "edge infrastructure",
       "id": "salvatorepesti_com_edge_infrastructure"
     },
@@ -400,7 +400,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 2,
       "norm_label": "secure web architecture",
       "id": "salvatorepesti_com_secure_web_architecture"
     },
@@ -413,7 +413,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 5,
+      "community": 3,
       "norm_label": "authentication systems",
       "id": "salvatorepesti_com_authentication_systems"
     },
@@ -426,7 +426,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 5,
+      "community": 3,
       "norm_label": "cloudflare ecosystem",
       "id": "salvatorepesti_com_cloudflare_ecosystem"
     },
@@ -439,7 +439,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "cdn & caching strategies",
       "id": "salvatorepesti_com_cdn_caching_strategies"
     },
@@ -452,7 +452,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 5,
+      "community": 2,
       "norm_label": "api design & edge compute",
       "id": "salvatorepesti_com_api_design_edge_compute"
     },
@@ -465,7 +465,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 2,
       "norm_label": "browser security hardening",
       "id": "salvatorepesti_com_browser_security_hardening"
     },
@@ -478,7 +478,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 2,
       "norm_label": "security auditing & hardening",
       "id": "salvatorepesti_com_security_auditing_hardening"
     },
@@ -504,7 +504,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "automated release pipelines",
       "id": "salvatorepesti_com_automated_release_pipelines"
     },
@@ -517,7 +517,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "frontend performance optimization",
       "id": "salvatorepesti_com_frontend_performance_optimization"
     },
@@ -530,7 +530,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "infrastructure & deployment automation",
       "id": "salvatorepesti_com_infrastructure_deployment_automation"
     },
@@ -556,7 +556,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 9,
+      "community": 3,
       "norm_label": "custom tooling & workflow engineering",
       "id": "salvatorepesti_com_custom_tooling_workflow"
     },
@@ -569,7 +569,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 5,
+      "community": 3,
       "norm_label": "case 01 \u2014 cloudflare-native auth layer for fintech",
       "id": "salvatorepesti_com_case01_cloudflare_auth"
     },
@@ -582,7 +582,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 4,
+      "community": 6,
       "norm_label": "case 02 \u2014 saas p95 ttfb reduction 71%",
       "id": "salvatorepesti_com_case02_saas_ttfb"
     },
@@ -595,7 +595,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 9,
+      "community": 3,
       "norm_label": "case 03 \u2014 custom workflow tooling (media client)",
       "id": "salvatorepesti_com_case03_workflow_tooling"
     },
@@ -637,7 +637,7 @@
       "author": "Salvatore Pesti",
       "contributor": null,
       "rationale": "Hardening lives in the defaults \u2014 headers, cookies, build, dependencies, deploy. Audited, not bolted on.",
-      "community": 6,
+      "community": 2,
       "norm_label": "principle: security is a posture, not a sprint",
       "id": "salvatorepesti_com_approach_security_posture"
     },
@@ -665,7 +665,7 @@
       "author": "Salvatore Pesti",
       "contributor": null,
       "rationale": "Scripts that save a teammate a meeting a week pay for themselves in a month.",
-      "community": 9,
+      "community": 3,
       "norm_label": "principle: tooling earns its keep",
       "id": "salvatorepesti_com_approach_tooling_earns_keep"
     },
@@ -1694,5 +1694,5 @@
       "source_file": "salvatorepesti.com.html"
     }
   ],
-  "built_at_commit": "36d55e88b58fa6ef001fb5f5562a00638ea217f2"
+  "built_at_commit": "1e2ff00a0f43f4aae0b3ba4f636d65716894b2fb"
 }

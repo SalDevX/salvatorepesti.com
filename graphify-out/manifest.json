@@ -24,23 +24,27 @@
     "hash": "6b707be07d1e5d1204f755f5fca95b4d"
   },
   "/home/craftworkson/dev/salvatorepesti.com/AGENTS.md": {
-    "mtime": 1779611715.3143559,
-    "hash": "8210dc14f82d48cda0cf89017c04dba3"
-  },
-  "/home/craftworkson/dev/salvatorepesti.com/salvatorepesti.com.html": {
-    "mtime": 1779603843.7694635,
-    "hash": "d84aeea98b8065787c8a5b98fb2e155a"
+    "mtime": 1779612305.7022667,
+    "hash": "c9e8774fa7a21a67539a67aba538011b"
   },
   "/home/craftworkson/dev/salvatorepesti.com/index.html": {
     "mtime": 1779611601.555651,
     "hash": "850d4a6812dc20b7e8693c3836157c38"
   },
   "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY_MAP.md": {
-    "mtime": 1779611752.9063883,
-    "hash": "2b1e50af08824432a547d3167972f5a6"
+    "mtime": 1779612350.3250167,
+    "hash": "0d61d37a41c68ad8ce6e1889de774bdd"
+  },
+  "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY_REFERENCE.md": {
+    "mtime": 1779612283.8668687,
+    "hash": "0db6b5c3423713ec6a91a118ab2d40c7"
   },
   "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY.md": {
-    "mtime": 1779611785.0193334,
-    "hash": "ca641984c859e0195945176354371080"
+    "mtime": 1779612312.4351306,
+    "hash": "f0bc9174e6170d6af9657e72d6a9b281"
+  },
+  "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY_CHANGELOG.md": {
+    "mtime": 1779612274.8150058,
+    "hash": "fb0bdad1258797875ab287f9812f3d4b"
   }
 }
