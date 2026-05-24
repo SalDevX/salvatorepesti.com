@@ -59,11 +59,12 @@ git push origin main
 
 | Date | What | File |
 |------|------|------|
-| 2026-05-24 | fix: align wrangler.toml project name `salvatorepesti-com` → `salvatorepesti` to match Cloudflare Pages project | wrangler.toml |
 | 2026-05-24 | content: replace fictional case studies with real client work — Case 01 → MartaHowell Jewellery (Cloudflare Workers, D1, R2, FileMaker pipeline); Case 02 → reel-engine (automated YouTube pipeline, 500hrs/day); About: removed inaccurate "founders and engineering leaders" claim | index.html |
 | 2026-05-24 | content: remove fictional Case 03 — Case 03 (Custom Workflow Tooling / Media Client) section removed from index.html; Community 9 removed from MEMORY_MAP.md | index.html |
 | 2026-05-24 | fix: add Cache-Control: public, max-age=0, must-revalidate to /* in _headers to prevent stale HTML at Cloudflare edge | _headers |
 | 2026-05-24 | content: update case study dates — Case 01 and Case 02 year changed from 2024 to 2026 in `<span>· 2026 / Ongoing</span>` | index.html |
 | 2026-05-24 | fix: replace 4 generic validator rules (data.js, sftp, assets, mobile) with 3 project-specific rules — `_rule_no_inline_styles`, `_rule_email_protection_intact`, `_rule_csp_not_weakened`; graph: `files_touched_in_diff()` now 4 edges, `added_lines_for_file()` and `_rule_email_protection_intact()` new god nodes at 4 edges | tools/validator_rules.py |
 | 2026-05-24 | test: add smoke test suite — 25 tests, all passing; covers validator rules 1-3, FailBlock parsing, MetaController retry, project structure invariants, index.html content guards; graph: 100 nodes / 146 edges; `_run_validator()` 10 edges + `_make_diff()` 9 edges new god nodes; MetaController bumped to 6 edges | tests/smoke_test.py |
+| 2026-05-24 | content: Case 01 title → "Edge infrastructure for a private luxury wholesale showroom"; description expanded with HttpOnly sessions, D1-backed credential management, R2 asset CDN, KV data layer; added `KV` and `Python` stack chips | index.html |
+| 2026-05-24 | feat: bin/commit now auto push+deploy — added `push_and_deploy()` (git push → npx wrangler pages deploy . --branch master); `--skip-deploy` flag added; solves stale cache on production after every commit | bin/commit |
 

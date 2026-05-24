@@ -39,7 +39,7 @@
 
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `index.html` | `Case 01 — MartaHowell Jewellery — Cloudflare-native commerce and data infrastructure`, `API Design & Edge Compute`, `Authentication Systems` | — | Workers, D1, R2, FileMaker pipeline |
+| `index.html` | `Case 01 — MartaHowell Jewellery — Edge infrastructure for a private luxury wholesale showroom`, `API Design & Edge Compute`, `Authentication Systems` | — | Workers auth (HttpOnly sessions, D1), R2 CDN, KV data layer, FileMaker export pipeline |
 | `index.html` + `_headers` | `Cloudflare Ecosystem`, `Edge Infrastructure` | `Cloudflare Ecosystem` **5 edges**, `Edge Infrastructure` **4 edges** | CSP + CDN config — parallel security review |
 | `wrangler.toml` | Pages config — name, build output dir | — | No credentials — safe to commit |
 
@@ -77,6 +77,7 @@
 | `tools/validator.py` | `files_in_diff()`, `files_touched_in_diff()`, `added_lines()`, `added_lines_for_file()`, `main()` | @tooling-agent | Run: `git diff \| python3 tools/validator.py` |
 | `tools/meta_controller.py` | `MetaController`, `FailBlock`, `RetryPlan`, `build_retry_plan_for_attempt()`, `from_text()`, `_infer_category()` | @tooling-agent | Retry loop |
 | `bin/meta-controller` | `run_agent()`, `run_validator()`, `dry_run()`, `main()` | @tooling-agent | Entry: `bin/meta-controller --task "..."` |
+| `bin/commit` | `validate()`, `stage()`, `commit()`, `run_tests()`, `graphify_update()`, `refresh_god_nodes()`, `push_and_deploy()`, `main()` | @tooling-agent | Full pipeline: validate→test→commit→graphify→god-nodes→push→deploy; `--skip-deploy` flag skips push+wrangler |
 | `tests/smoke_test.py` | `_make_diff()`, `_run_validator()`, 25 test functions | @tooling-agent | `_run_validator()` **10 edges** + `_make_diff()` **9 edges** god nodes; run: `python3 -m pytest tests/smoke_test.py -v` |
 | `logs/` | Failure reports | @meta-controller | `meta-controller-YYYY-MM-DD-HH-MM-SS.md` |
 | `index.html` | All markup, Cloudflare email protection, case studies | @html-agent | Entry point — all god nodes declared here |

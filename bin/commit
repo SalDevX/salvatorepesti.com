@@ -127,6 +127,18 @@ def graphify_update() -> None:
         print("[commit] graphify update failed (non-fatal)", file=sys.stderr)
 
 
+def push_and_deploy() -> None:
+    print_section("PUSH & DEPLOY")
+    r = git("push")
+    if r.returncode != 0:
+        print("[commit] git push failed (non-fatal — deploy skipped)", file=sys.stderr)
+        return
+    r = run(["npx", "wrangler", "pages", "deploy", ".", "--branch", "master",
+             "--commit-dirty=true"])
+    if r.returncode != 0:
+        print("[commit] wrangler deploy failed (non-fatal)", file=sys.stderr)
+
+
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
@@ -143,6 +155,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("files", nargs="*", help="Specific files to stage (default: all tracked changes)")
     p.add_argument("--skip-validate", action="store_true",
                    help="Skip validator gate (use only when you know what you're doing)")
+    p.add_argument("--skip-deploy", action="store_true",
+                   help="Commit only — skip git push and wrangler deploy")
     return p.parse_args()
 
 
@@ -198,6 +212,10 @@ def main() -> int:
 
     # ── 8. god-node refresh (no-op if tools/refresh_god_nodes.py absent)
     refresh_god_nodes()
+
+    # ── 9. push + deploy to Cloudflare Pages production
+    if not args.skip_deploy:
+        push_and_deploy()
 
     print("\n[commit] done ✓")
     return 0

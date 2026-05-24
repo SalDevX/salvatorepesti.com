@@ -52,7 +52,7 @@
       "source_file": "js/main.js",
       "source_location": "L1",
       "id": "js_main_js",
-      "community": 9,
+      "community": 10,
       "norm_label": "main.js"
     },
     {
@@ -61,7 +61,7 @@
       "source_file": "js/main.js",
       "source_location": "L4",
       "id": "js_main_tick",
-      "community": 9,
+      "community": 10,
       "norm_label": "tick()"
     },
     {
@@ -711,7 +711,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "edge infrastructure",
       "id": "salvatorepesti_com_edge_infrastructure"
     },
@@ -737,7 +737,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "authentication systems",
       "id": "salvatorepesti_com_authentication_systems"
     },
@@ -750,7 +750,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "cloudflare ecosystem",
       "id": "salvatorepesti_com_cloudflare_ecosystem"
     },
@@ -763,7 +763,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "cdn & caching strategies",
       "id": "salvatorepesti_com_cdn_caching_strategies"
     },
@@ -776,7 +776,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 8,
       "norm_label": "api design & edge compute",
       "id": "salvatorepesti_com_api_design_edge_compute"
     },
@@ -828,7 +828,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "automated release pipelines",
       "id": "salvatorepesti_com_automated_release_pipelines"
     },
@@ -841,7 +841,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "frontend performance optimization",
       "id": "salvatorepesti_com_frontend_performance_optimization"
     },
@@ -854,7 +854,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "infrastructure & deployment automation",
       "id": "salvatorepesti_com_infrastructure_deployment_automation"
     },
@@ -880,7 +880,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "custom tooling & workflow engineering",
       "id": "salvatorepesti_com_custom_tooling_workflow"
     },
@@ -893,7 +893,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 8,
       "norm_label": "case 01 \u2014 cloudflare-native auth layer for fintech",
       "id": "salvatorepesti_com_case01_cloudflare_auth"
     },
@@ -906,7 +906,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "case 02 \u2014 saas p95 ttfb reduction 71%",
       "id": "salvatorepesti_com_case02_saas_ttfb"
     },
@@ -919,7 +919,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 9,
       "norm_label": "case 03 \u2014 custom workflow tooling (media client)",
       "id": "salvatorepesti_com_case03_workflow_tooling"
     },
@@ -989,7 +989,7 @@
       "author": "Salvatore Pesti",
       "contributor": null,
       "rationale": "Scripts that save a teammate a meeting a week pay for themselves in a month.",
-      "community": 7,
+      "community": 9,
       "norm_label": "principle: tooling earns its keep",
       "id": "salvatorepesti_com_approach_tooling_earns_keep"
     },
@@ -2611,5 +2611,5 @@
       "source_file": "salvatorepesti.com.html"
     }
   ],
-  "built_at_commit": "80cb252ebaeb7caf4bf02e758fd3f6ff407ef458"
+  "built_at_commit": "764e6c9c8c491222474ec39005e2f02b34281b06"
 }
