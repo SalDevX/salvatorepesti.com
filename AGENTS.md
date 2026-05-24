@@ -1,0 +1,82 @@
+# salvatorepesti.com — AGENTS.md
+# Specialized agent team for 30 nodes.
+# Last updated: 2026-05-24
+
+---
+
+## Routing — which file to read
+
+| Task | Read this file |
+|------|----------------|
+| ALL tasks — entry point (read first) | `agents/dispatcher.prompt` |
+| Edit `index.html`, `css/`, `js/`, `_headers`, `_redirects`, `cloudflare.toml` | `agents/html-agent.prompt` |
+| Edit `tools/validator.py`, `tools/meta_controller.py`, `bin/` | `agents/tooling-agent.prompt` |
+| Doc sync after commit / MEMORY.md / MEMORY_MAP.md | `agents/memory-keeper.prompt` |
+| Security review — auth, I/O, external scripts, credentials | `agents/security-engineer.prompt` |
+| Validate any output before applying to disk | `agents/validator.prompt` |
+| FAIL escalation from any agent — retry loop | `agents/meta-controller.prompt` |
+
+Cross-agent task: read both relevant prompt files. No others.
+
+---
+
+## Memory load policy
+
+| File | Load when | Line budget |
+|------|-----------|-------------|
+| `memory/MEMORY.md` | Every session | ≤70 lines |
+| `memory/MEMORY_MAP.md` | Every session | ≤95 lines |
+| `memory/MEMORY_CHANGELOG.md` | On demand — recent fix context only | unlimited |
+| `memory/MEMORY_INTELLIGENCE.md` | On demand — before touching flagged areas | unlimited |
+| `memory/MEMORY_REFERENCE.md` | On demand — when verifying a spec | unlimited |
+
+---
+
+## Global invariants — apply to every task, every agent
+
+**Hard rules — never break:**
+- Never modify god nodes without declaring in task description: `salvatorepesti.com — Personal Portfolio Site` (index.html, 29 edges), `Cloudflare Ecosystem` (index.html + _headers, 5 edges), `Edge Infrastructure` (index.html + _headers + cloudflare.toml, 4 edges)
+- Run `graphify update .` after every code change (zero API cost — AST only)
+
+**After every code change:**
+1. `graphify update .`
+2. `python3 tools/refresh_god_nodes.py` — patches god nodes table in AGENTS.md
+3. Update `memory/MEMORY.md` with today's date
+4. Update `memory/MEMORY_MAP.md` if new functions added
+5. `python3 -m pytest tests/smoke_test.py -v` — all tests must pass
+
+**Agent ownership — apply to every task, every agent:**
+- Each agent may ONLY modify files listed in its `## AGENT OWNERSHIP` block
+- God Nodes require full cross-agent audit before any change — declare in task description before writing
+
+**Strict output mode — apply to every agent response:**
+- Return ONLY diff or complete file
+- No explanation unless `--explain` is appended to the request
+- No prose preamble or postamble
+
+**Validator gate — required before any diff is applied:**
+- Run `agents/validator.prompt` on every code diff before writing to disk
+- FAIL → retry with escalated model (see validator.prompt retry ladder)
+- 2× FAIL same rule → escalate to human, do NOT auto-apply
+
+---
+
+## God Nodes — never touch without full cross-agent audit
+
+Graph source: `graphify-out/GRAPH_REPORT.md` · 30 nodes · 47 edges · last run 2026-05-24
+
+| Node | Edges | File | Owner | Notes |
+|------|-------|------|-------|-------|
+| `salvatorepesti.com — Personal Portfolio Site` | 29 | `index.html + css/ + js/` | @html-agent | Full cross-agent audit required |
+| `Cloudflare Ecosystem` | 5 | `index.html + css/ + js/` | @html-agent | Verify Cloudflare scripts intact |
+| `Edge Infrastructure` | 4 | `index.html + css/ + js/` | @html-agent | Cache/CDN config must not regress |
+| `Secure Web Architecture` | 4 | `index.html + css/ + js/` | @html-agent + @security-engineer | Parallel security review required |
+| `Case 02 — SaaS p95 TTFB Reduction 71%` | 4 | `index.html + css/ + js/` | @html-agent | Owner confirmation before changing metrics |
+| `Salvatore Pesti` | 3 | `index.html + css/ + js/` | @html-agent | Owner confirmation before changing bio/identity |
+| `CDN & Caching Strategies` | 3 | `index.html + css/ + js/` | @html-agent | Performance claims — verify before editing |
+| `Security Auditing & Hardening` | 3 | `index.html + css/ + js/` | @html-agent + @security-engineer | Parallel security review required |
+
+### Critical Path
+
+`salvatorepesti.com — Personal Portfolio Site` (index.html + css/ + js/) has 29 edges — changes cascade across the graph.
+Declare in task description before writing. Full cross-agent audit required.

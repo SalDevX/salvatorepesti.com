@@ -1,0 +1,1698 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "edge_security_core_triad",
+        "label": "Edge, Security, and Authentication as Core Practice Triad",
+        "nodes": [
+          "salvatorepesti_com_edge_infrastructure",
+          "salvatorepesti_com_secure_web_architecture",
+          "salvatorepesti_com_authentication_systems"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "salvatorepesti.com.html"
+      },
+      {
+        "id": "case01_tech_stack",
+        "label": "Case 01 Cloudflare Auth Stack (Workers, D1, WebAuthn, TypeScript)",
+        "nodes": [
+          "salvatorepesti_com_case01_cloudflare_auth",
+          "salvatorepesti_com_cloudflare_ecosystem",
+          "salvatorepesti_com_authentication_systems"
+        ],
+        "relation": "implement",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "salvatorepesti.com.html"
+      },
+      {
+        "id": "engineering_philosophy_cluster",
+        "label": "Engineering Philosophy: Boundaries, Security Posture, Documentation",
+        "nodes": [
+          "salvatorepesti_com_approach_boundaries",
+          "salvatorepesti_com_approach_security_posture",
+          "salvatorepesti_com_approach_documentation",
+          "salvatorepesti_com_approach_read_system"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "salvatorepesti.com.html"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L1",
+      "id": "js_main_js",
+      "community": 10,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "tick()",
+      "file_type": "code",
+      "source_file": "js/main.js",
+      "source_location": "L4",
+      "id": "js_main_tick",
+      "community": 10,
+      "norm_label": "tick()"
+    },
+    {
+      "label": "validator.py",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L1",
+      "id": "tools_validator_py",
+      "community": 2,
+      "norm_label": "validator.py"
+    },
+    {
+      "label": "files_in_diff()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L27",
+      "id": "tools_validator_files_in_diff",
+      "community": 7,
+      "norm_label": "files_in_diff()"
+    },
+    {
+      "label": "files_touched_in_diff()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L32",
+      "id": "tools_validator_files_touched_in_diff",
+      "community": 8,
+      "norm_label": "files_touched_in_diff()"
+    },
+    {
+      "label": "added_lines()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L37",
+      "id": "tools_validator_added_lines",
+      "community": 3,
+      "norm_label": "added_lines()"
+    },
+    {
+      "label": "added_lines_for_file()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L45",
+      "id": "tools_validator_added_lines_for_file",
+      "community": 11,
+      "norm_label": "added_lines_for_file()"
+    },
+    {
+      "label": "removed_lines()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L59",
+      "id": "tools_validator_removed_lines",
+      "community": 2,
+      "norm_label": "removed_lines()"
+    },
+    {
+      "label": "_rule_no_direct_data_js_edit()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L71",
+      "id": "tools_validator_rule_no_direct_data_js_edit",
+      "community": 7,
+      "norm_label": "_rule_no_direct_data_js_edit()"
+    },
+    {
+      "label": "_rule_sftp_deploy_logic_gate()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L78",
+      "id": "tools_validator_rule_sftp_deploy_logic_gate",
+      "community": 3,
+      "norm_label": "_rule_sftp_deploy_logic_gate()"
+    },
+    {
+      "label": "_rule_asset_path_consistency()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L89",
+      "id": "tools_validator_rule_asset_path_consistency",
+      "community": 3,
+      "norm_label": "_rule_asset_path_consistency()"
+    },
+    {
+      "label": "_rule_mobile_desktop_parity()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L101",
+      "id": "tools_validator_rule_mobile_desktop_parity",
+      "community": 8,
+      "norm_label": "_rule_mobile_desktop_parity()"
+    },
+    {
+      "label": "_load_project_rules()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L130",
+      "id": "tools_validator_load_project_rules",
+      "community": 2,
+      "norm_label": "_load_project_rules()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L166",
+      "id": "tools_validator_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Files present in a diff via --- a/ headers. Does not catch new files (use files_",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L28",
+      "id": "tools_validator_rationale_28",
+      "community": 7,
+      "norm_label": "files present in a diff via --- a/ headers. does not catch new files (use files_"
+    },
+    {
+      "label": "Files touched in a diff via +++ b/ headers. Includes new files where source side",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L33",
+      "id": "tools_validator_rationale_33",
+      "community": 8,
+      "norm_label": "files touched in a diff via +++ b/ headers. includes new files where source side"
+    },
+    {
+      "label": "Added lines scoped to a specific file's hunks only.",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L46",
+      "id": "tools_validator_rationale_46",
+      "community": 11,
+      "norm_label": "added lines scoped to a specific file's hunks only."
+    },
+    {
+      "label": "js/data.js is generated \u2014 must not be edited directly.",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L72",
+      "id": "tools_validator_rationale_72",
+      "community": 7,
+      "norm_label": "js/data.js is generated \u2014 must not be edited directly."
+    },
+    {
+      "label": "tools/sftp_sync.py must not gain new logic \u2014 comment-only changes are allowed.",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L79",
+      "id": "tools_validator_rationale_79",
+      "community": 3,
+      "norm_label": "tools/sftp_sync.py must not gain new logic \u2014 comment-only changes are allowed."
+    },
+    {
+      "label": "Asset filenames referenced in diffs must exist on disk in assets/.",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L90",
+      "id": "tools_validator_rationale_90",
+      "community": 3,
+      "norm_label": "asset filenames referenced in diffs must exist on disk in assets/."
+    },
+    {
+      "label": "Desktop UI changes must be paired with a matching mobile change in the same diff",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L102",
+      "id": "tools_validator_rationale_102",
+      "community": 8,
+      "norm_label": "desktop ui changes must be paired with a matching mobile change in the same diff"
+    },
+    {
+      "label": "Load project-specific rules from tools/validator_rules.py if it exists.     The",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L131",
+      "id": "tools_validator_rationale_131",
+      "community": 2,
+      "norm_label": "load project-specific rules from tools/validator_rules.py if it exists.     the"
+    },
+    {
+      "label": "meta_controller.py",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L1",
+      "id": "tools_meta_controller_py",
+      "community": 0,
+      "norm_label": "meta_controller.py"
+    },
+    {
+      "label": "_infer_category()",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L57",
+      "id": "tools_meta_controller_infer_category",
+      "community": 0,
+      "norm_label": "_infer_category()"
+    },
+    {
+      "label": "FailBlock",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L106",
+      "id": "tools_meta_controller_failblock",
+      "community": 0,
+      "norm_label": "failblock"
+    },
+    {
+      "label": "from_text()",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L115",
+      "id": "tools_meta_controller_from_text",
+      "community": 0,
+      "norm_label": "from_text()"
+    },
+    {
+      "label": "RetryPlan",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L135",
+      "id": "tools_meta_controller_retryplan",
+      "community": 0,
+      "norm_label": "retryplan"
+    },
+    {
+      "label": ".as_dict()",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L145",
+      "id": "tools_meta_controller_retryplan_as_dict",
+      "community": 0,
+      "norm_label": ".as_dict()"
+    },
+    {
+      "label": "MetaController",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L162",
+      "id": "tools_meta_controller_metacontroller",
+      "community": 0,
+      "norm_label": "metacontroller"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L165",
+      "id": "tools_meta_controller_metacontroller_init",
+      "community": 0,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".build_retry_plan_for_attempt()",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L176",
+      "id": "tools_meta_controller_metacontroller_build_retry_plan_for_attempt",
+      "community": 0,
+      "norm_label": ".build_retry_plan_for_attempt()"
+    },
+    {
+      "label": ".run()",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L194",
+      "id": "tools_meta_controller_metacontroller_run",
+      "community": 0,
+      "norm_label": ".run()"
+    },
+    {
+      "label": "._write_report()",
+      "file_type": "code",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L233",
+      "id": "tools_meta_controller_metacontroller_write_report",
+      "community": 0,
+      "norm_label": "._write_report()"
+    },
+    {
+      "label": "holography \u2014 tools/meta_controller.py Generic retry loop logic. Copy to your pro",
+      "file_type": "rationale",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L1",
+      "id": "tools_meta_controller_rationale_1",
+      "community": 0,
+      "norm_label": "holography \u2014 tools/meta_controller.py generic retry loop logic. copy to your pro"
+    },
+    {
+      "label": "salvatorepesti.com \u2014 Personal Portfolio Site",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 1,
+      "norm_label": "salvatorepesti.com \u2014 personal portfolio site",
+      "id": "salvatorepesti_com_page"
+    },
+    {
+      "label": "Salvatore Pesti",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 6,
+      "norm_label": "salvatore pesti",
+      "id": "salvatorepesti_com_salvatore_pesti"
+    },
+    {
+      "label": "Edge Infrastructure",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 5,
+      "norm_label": "edge infrastructure",
+      "id": "salvatorepesti_com_edge_infrastructure"
+    },
+    {
+      "label": "Secure Web Architecture",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 6,
+      "norm_label": "secure web architecture",
+      "id": "salvatorepesti_com_secure_web_architecture"
+    },
+    {
+      "label": "Authentication Systems",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 5,
+      "norm_label": "authentication systems",
+      "id": "salvatorepesti_com_authentication_systems"
+    },
+    {
+      "label": "Cloudflare Ecosystem",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 5,
+      "norm_label": "cloudflare ecosystem",
+      "id": "salvatorepesti_com_cloudflare_ecosystem"
+    },
+    {
+      "label": "CDN & Caching Strategies",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 4,
+      "norm_label": "cdn & caching strategies",
+      "id": "salvatorepesti_com_cdn_caching_strategies"
+    },
+    {
+      "label": "API Design & Edge Compute",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 5,
+      "norm_label": "api design & edge compute",
+      "id": "salvatorepesti_com_api_design_edge_compute"
+    },
+    {
+      "label": "Browser Security Hardening",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 6,
+      "norm_label": "browser security hardening",
+      "id": "salvatorepesti_com_browser_security_hardening"
+    },
+    {
+      "label": "Security Auditing & Hardening",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 6,
+      "norm_label": "security auditing & hardening",
+      "id": "salvatorepesti_com_security_auditing_hardening"
+    },
+    {
+      "label": "Linux Systems Administration",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 1,
+      "norm_label": "linux systems administration",
+      "id": "salvatorepesti_com_linux_systems_administration"
+    },
+    {
+      "label": "Automated Release Pipelines",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 4,
+      "norm_label": "automated release pipelines",
+      "id": "salvatorepesti_com_automated_release_pipelines"
+    },
+    {
+      "label": "Frontend Performance Optimization",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 4,
+      "norm_label": "frontend performance optimization",
+      "id": "salvatorepesti_com_frontend_performance_optimization"
+    },
+    {
+      "label": "Infrastructure & Deployment Automation",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 4,
+      "norm_label": "infrastructure & deployment automation",
+      "id": "salvatorepesti_com_infrastructure_deployment_automation"
+    },
+    {
+      "label": "Systems-Level Full-Stack Engineering",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 1,
+      "norm_label": "systems-level full-stack engineering",
+      "id": "salvatorepesti_com_systems_level_fullstack"
+    },
+    {
+      "label": "Custom Tooling & Workflow Engineering",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 9,
+      "norm_label": "custom tooling & workflow engineering",
+      "id": "salvatorepesti_com_custom_tooling_workflow"
+    },
+    {
+      "label": "Case 01 \u2014 Cloudflare-native Auth Layer for Fintech",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 5,
+      "norm_label": "case 01 \u2014 cloudflare-native auth layer for fintech",
+      "id": "salvatorepesti_com_case01_cloudflare_auth"
+    },
+    {
+      "label": "Case 02 \u2014 SaaS p95 TTFB Reduction 71%",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 4,
+      "norm_label": "case 02 \u2014 saas p95 ttfb reduction 71%",
+      "id": "salvatorepesti_com_case02_saas_ttfb"
+    },
+    {
+      "label": "Case 03 \u2014 Custom Workflow Tooling (Media Client)",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 9,
+      "norm_label": "case 03 \u2014 custom workflow tooling (media client)",
+      "id": "salvatorepesti_com_case03_workflow_tooling"
+    },
+    {
+      "label": "Principle: Read the System Before You Touch It",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "rationale": "Every engagement starts with a written audit \u2014 what's in place, what's load-bearing, what's quietly bleeding budget or risk.",
+      "community": 1,
+      "norm_label": "principle: read the system before you touch it",
+      "id": "salvatorepesti_com_approach_read_system"
+    },
+    {
+      "label": "Principle: Boundaries Over Abstractions",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "rationale": "Fewer layers, clearer contracts \u2014 prefer honest code over framework indirection.",
+      "community": 1,
+      "norm_label": "principle: boundaries over abstractions",
+      "id": "salvatorepesti_com_approach_boundaries"
+    },
+    {
+      "label": "Principle: Security Is a Posture, Not a Sprint",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "rationale": "Hardening lives in the defaults \u2014 headers, cookies, build, dependencies, deploy. Audited, not bolted on.",
+      "community": 6,
+      "norm_label": "principle: security is a posture, not a sprint",
+      "id": "salvatorepesti_com_approach_security_posture"
+    },
+    {
+      "label": "Principle: Ship in the Open",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "rationale": "Public branches, short cycles, written decisions \u2014 clients can read the diff before the invoice.",
+      "community": 1,
+      "norm_label": "principle: ship in the open",
+      "id": "salvatorepesti_com_approach_ship_open"
+    },
+    {
+      "label": "Principle: Tooling Earns Its Keep",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "rationale": "Scripts that save a teammate a meeting a week pay for themselves in a month.",
+      "community": 9,
+      "norm_label": "principle: tooling earns its keep",
+      "id": "salvatorepesti_com_approach_tooling_earns_keep"
+    },
+    {
+      "label": "Principle: Leave It Better Documented",
+      "file_type": "rationale",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "rationale": "The handoff is the deliverable \u2014 architecture diagrams, runbooks, decision logs written for the next person.",
+      "community": 1,
+      "norm_label": "principle: leave it better documented",
+      "id": "salvatorepesti_com_approach_documentation"
+    },
+    {
+      "label": "Live Clock Script (WITA UTC+8)",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 921",
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 1,
+      "norm_label": "live clock script (wita utc+8)",
+      "id": "salvatorepesti_com_clock_script"
+    },
+    {
+      "label": "Scroll Reveal Script (IntersectionObserver)",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 944",
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 1,
+      "norm_label": "scroll reveal script (intersectionobserver)",
+      "id": "salvatorepesti_com_reveal_script"
+    },
+    {
+      "label": "Deploy Date Stamp Script",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 937",
+      "source_url": null,
+      "captured_at": null,
+      "author": "Salvatore Pesti",
+      "contributor": null,
+      "community": 1,
+      "norm_label": "deploy date stamp script",
+      "id": "salvatorepesti_com_deploy_date_script"
+    },
+    {
+      "label": "Geist & Geist Mono Typefaces (Google Fonts)",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 11",
+      "source_url": "https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "geist & geist mono typefaces (google fonts)",
+      "id": "salvatorepesti_com_geist_font"
+    },
+    {
+      "label": "Cloudflare Email Protection (email-decode.min.js)",
+      "file_type": "document",
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 919",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "cloudflare email protection (email-decode.min.js)",
+      "id": "salvatorepesti_com_cloudflare_email_protection"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "js/main.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "js_main_js",
+      "target": "js_main_tick"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_files_in_diff"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_files_touched_in_diff"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_added_lines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_added_lines_for_file"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_removed_lines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_rule_no_direct_data_js_edit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_rule_sftp_deploy_logic_gate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_rule_asset_path_consistency"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_rule_mobile_desktop_parity"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_load_project_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_main"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rule_no_direct_data_js_edit",
+      "target": "tools_validator_files_in_diff"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rule_sftp_deploy_logic_gate",
+      "target": "tools_validator_files_in_diff"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_28",
+      "target": "tools_validator_files_in_diff"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rule_mobile_desktop_parity",
+      "target": "tools_validator_files_touched_in_diff"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_33",
+      "target": "tools_validator_files_touched_in_diff"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rule_sftp_deploy_logic_gate",
+      "target": "tools_validator_added_lines"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rule_asset_path_consistency",
+      "target": "tools_validator_added_lines"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_46",
+      "target": "tools_validator_added_lines_for_file"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_72",
+      "target": "tools_validator_rule_no_direct_data_js_edit"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_79",
+      "target": "tools_validator_rule_sftp_deploy_logic_gate"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_90",
+      "target": "tools_validator_rule_asset_path_consistency"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_102",
+      "target": "tools_validator_rule_mobile_desktop_parity"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L178",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_main",
+      "target": "tools_validator_load_project_rules"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_131",
+      "target": "tools_validator_load_project_rules"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_py",
+      "target": "tools_meta_controller_infer_category"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_py",
+      "target": "tools_meta_controller_failblock"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_py",
+      "target": "tools_meta_controller_from_text"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_py",
+      "target": "tools_meta_controller_retryplan"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_py",
+      "target": "tools_meta_controller_metacontroller"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_rationale_1",
+      "target": "tools_meta_controller_py"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_from_text",
+      "target": "tools_meta_controller_infer_category"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L224",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_metacontroller_run",
+      "target": "tools_meta_controller_from_text"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_retryplan",
+      "target": "tools_meta_controller_retryplan_as_dict"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L183",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_metacontroller_build_retry_plan_for_attempt",
+      "target": "tools_meta_controller_retryplan"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_metacontroller",
+      "target": "tools_meta_controller_metacontroller_init"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L176",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_metacontroller",
+      "target": "tools_meta_controller_metacontroller_build_retry_plan_for_attempt"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_metacontroller",
+      "target": "tools_meta_controller_metacontroller_run"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L233",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_metacontroller",
+      "target": "tools_meta_controller_metacontroller_write_report"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_metacontroller_run",
+      "target": "tools_meta_controller_metacontroller_build_retry_plan_for_attempt"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/meta_controller.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_meta_controller_metacontroller_run",
+      "target": "tools_meta_controller_metacontroller_write_report"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 651",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_salvatore_pesti"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 716",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_edge_infrastructure"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 717",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_secure_web_architecture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 722",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_authentication_systems"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 721",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_cloudflare_ecosystem"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 723",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_cdn_caching_strategies"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 724",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_api_design_edge_compute"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 725",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_browser_security_hardening"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 728",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_security_auditing_hardening"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 727",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_linux_systems_administration"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 726",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_automated_release_pipelines"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 720",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_frontend_performance_optimization"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 719",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_infrastructure_deployment_automation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 718",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_systems_level_fullstack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 729",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_custom_tooling_workflow"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 745",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_case01_cloudflare_auth"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 777",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_case02_saas_ttfb"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 808",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_case03_workflow_tooling"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 852",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_approach_read_system"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 857",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_approach_boundaries"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 862",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_approach_security_posture"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 867",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_approach_ship_open"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 872",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_approach_tooling_earns_keep"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 877",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_approach_documentation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 11",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_geist_font"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 919",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_cloudflare_email_protection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 921",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_clock_script"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 944",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_reveal_script"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 937",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_page",
+      "target": "salvatorepesti_com_deploy_date_script"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 6",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_salvatore_pesti",
+      "target": "salvatorepesti_com_edge_infrastructure"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 6",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_salvatore_pesti",
+      "target": "salvatorepesti_com_secure_web_architecture"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "salvatorepesti_com_edge_infrastructure",
+      "target": "salvatorepesti_com_api_design_edge_compute"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "weight": 0.95,
+      "source": "salvatorepesti_com_cloudflare_ecosystem",
+      "target": "salvatorepesti_com_edge_infrastructure"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "salvatorepesti_com_secure_web_architecture",
+      "target": "salvatorepesti_com_browser_security_hardening"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "salvatorepesti_com_secure_web_architecture",
+      "target": "salvatorepesti_com_security_auditing_hardening"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 753",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_case01_cloudflare_auth",
+      "target": "salvatorepesti_com_authentication_systems"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 761",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_case01_cloudflare_auth",
+      "target": "salvatorepesti_com_cloudflare_ecosystem"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 820",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_case03_workflow_tooling",
+      "target": "salvatorepesti_com_cloudflare_ecosystem"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "salvatorepesti_com_cloudflare_ecosystem",
+      "target": "salvatorepesti_com_cdn_caching_strategies"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 787",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_case02_saas_ttfb",
+      "target": "salvatorepesti_com_cdn_caching_strategies"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 862",
+      "weight": 0.85,
+      "source": "salvatorepesti_com_approach_security_posture",
+      "target": "salvatorepesti_com_security_auditing_hardening"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 789",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_case02_saas_ttfb",
+      "target": "salvatorepesti_com_automated_release_pipelines"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": null,
+      "weight": 0.9,
+      "source": "salvatorepesti_com_infrastructure_deployment_automation",
+      "target": "salvatorepesti_com_automated_release_pipelines"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 785",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_case02_saas_ttfb",
+      "target": "salvatorepesti_com_frontend_performance_optimization"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 857",
+      "weight": 0.75,
+      "source": "salvatorepesti_com_approach_boundaries",
+      "target": "salvatorepesti_com_systems_level_fullstack"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 817",
+      "weight": 1.0,
+      "source": "salvatorepesti_com_case03_workflow_tooling",
+      "target": "salvatorepesti_com_custom_tooling_workflow"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "salvatorepesti.com.html",
+      "source_location": "line 872",
+      "weight": 0.85,
+      "source": "salvatorepesti_com_approach_tooling_earns_keep",
+      "target": "salvatorepesti_com_custom_tooling_workflow"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "edge_security_core_triad",
+      "label": "Edge, Security, and Authentication as Core Practice Triad",
+      "nodes": [
+        "salvatorepesti_com_edge_infrastructure",
+        "salvatorepesti_com_secure_web_architecture",
+        "salvatorepesti_com_authentication_systems"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "salvatorepesti.com.html"
+    },
+    {
+      "id": "case01_tech_stack",
+      "label": "Case 01 Cloudflare Auth Stack (Workers, D1, WebAuthn, TypeScript)",
+      "nodes": [
+        "salvatorepesti_com_case01_cloudflare_auth",
+        "salvatorepesti_com_cloudflare_ecosystem",
+        "salvatorepesti_com_authentication_systems"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "salvatorepesti.com.html"
+    },
+    {
+      "id": "engineering_philosophy_cluster",
+      "label": "Engineering Philosophy: Boundaries, Security Posture, Documentation",
+      "nodes": [
+        "salvatorepesti_com_approach_boundaries",
+        "salvatorepesti_com_approach_security_posture",
+        "salvatorepesti_com_approach_documentation",
+        "salvatorepesti_com_approach_read_system"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "salvatorepesti.com.html"
+    }
+  ],
+  "built_at_commit": "36d55e88b58fa6ef001fb5f5562a00638ea217f2"
+}

@@ -1,0 +1,99 @@
+# salvatorepesti.com — tooling-agent.prompt
+# Role: Tooling Agent — owns validator, meta-controller, and bin entry points.
+# Covers communities: 0 (meta-controller), 3 (validator main), 4 (rules), 6 (diff helpers), 7 (parity rules)
+# Last updated: 2026-05-24
+
+---
+
+## AGENT OWNERSHIP — @tooling-agent
+
+You may ONLY modify:
+```
+tools/validator.py
+tools/meta_controller.py
+tools/validator_rules.py      ← project-specific rules (create if needed)
+bin/meta-controller
+tests/smoke_test.py           ← create if asked
+```
+
+Do NOT touch:
+- `salvatorepesti.com.html` — owned by @html-agent
+- `agents/` — owned by @memory-keeper (doc sync only)
+- `memory/` — owned by @memory-keeper
+- `tools/sftp_sync.py` — FROZEN: comment-only changes allowed (validator rule 2)
+
+---
+
+## STRICT OUTPUT MODE
+
+Return ONLY diff or complete file.
+No explanation unless `--explain` is appended to the request.
+No prose preamble or postamble.
+
+---
+
+## PROJECT CONTEXT
+
+The holography tooling layer for salvatorepesti.com. Consists of:
+
+- `tools/validator.py` — static diff validator (4 universal rules + project-specific rules)
+- `tools/validator_rules.py` — project-specific overrides (auto-loaded by validator.py if present)
+- `tools/meta_controller.py` — retry loop: FailBlock, RetryPlan, MetaController
+- `bin/meta-controller` — CLI entry point for the retry loop
+- `tests/smoke_test.py` — smoke tests (referenced in CLAUDE.md; does not exist yet as of 2026-05-24)
+
+`tools/sftp_sync.py` is frozen — only comment-only changes allowed (validator universal rule 2).
+
+---
+
+## GOD NODES IN YOUR DOMAIN
+
+None of the validator/tooling community nodes are classified as god nodes.
+Key hub functions:
+- `files_in_diff()` — 4 edges (bridges communities 6 → 3, 4)
+- `_rule_sftp_deploy_logic_gate()` — 4 edges (bridges communities 4 → 3, 6)
+- `MetaController` — 5 edges
+- `files_touched_in_diff()` — 3 edges
+- `added_lines()` — 3 edges
+
+---
+
+## KEY RULES
+
+1. **sftp_sync.py is frozen** — `tools/sftp_sync.py` must not gain new logic. Comment-only changes only. Validator will catch violations.
+2. **No direct data.js edits** — `js/data.js` is generated; edits must go through the generator. Validator will catch violations.
+3. **Project rules in validator_rules.py** — new project-specific validator rules go in `tools/validator_rules.py`, not inline in `tools/validator.py`.
+4. **Max retries = 3** — meta-controller retry loop: attempts 1 → 2 → 3, then ESCALATE + write report to `logs/`.
+5. **Cumulative patches** — each meta-controller retry injects ALL prior patches plus the new one.
+
+---
+
+## SHARED FILES — ROUTING NOTES
+
+`tools/validator.py` is called by every agent post-diff. Changes to validation rules affect the entire team — flag cross-agent impact in ROUTE block.
+
+Adding a new validator rule: always add a corresponding row in the AGENTS.md validator rule mapping table and update `dispatcher.prompt`.
+
+---
+
+## WORKFLOW
+
+For every task:
+1. Identify which tool files are affected
+2. Check for cross-agent impact (new/changed rules affect all agents)
+3. Produce diff
+4. Self-validate: `git diff | python3 tools/validator.py`
+5. On PASS: apply + `graphify update .`
+
+---
+
+## COMMON TASKS
+
+| Task | Key file / function |
+|------|---------------------|
+| Add project-specific validator rule | `tools/validator_rules.py` (create if absent) |
+| Debug validator false positive/negative | `tools/validator.py` — `files_in_diff()`, `added_lines()` helpers |
+| Tune meta-controller retry strategy | `tools/meta_controller.py` — `build_retry_plan_for_attempt()` |
+| Add smoke test | `tests/smoke_test.py` (create) |
+| Debug meta-controller CLI | `bin/meta-controller` — `run_agent()`, `run_validator()`, `dry_run()` |
+| Freeze or unfreeze a file in validator | `tools/validator.py` — universal rule 2 pattern |
