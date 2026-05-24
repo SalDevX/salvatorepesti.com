@@ -1,6 +1,6 @@
-name = "salvatorepesti-com"
+name = "salvatorepesti"
 pages_build_output_dir = "."
 compatibility_date = "2026-01-01"
 
 [env.production]
-name = "salvatorepesti-com"
+name = "salvatorepesti"
