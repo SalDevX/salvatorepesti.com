@@ -1,16 +1,16 @@
 # Graph Report - salvatorepesti.com  (2026-05-24)
 
 ## Corpus Check
-- 7 files · ~8,559 words
+- 7 files · ~8,707 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 108 nodes · 155 edges · 8 communities detected
+- 108 nodes · 155 edges · 9 communities detected
 - Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 16 edges (avg confidence: 0.83)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3cf5a6f7`
+- Built from commit: `f4bff3c9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -23,6 +23,7 @@
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
 - [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 8|Community 8]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `salvatorepesti.com — Personal Portfolio Site` - 29 edges
@@ -53,7 +54,7 @@
 - **Case 01 Cloudflare Auth Stack (Workers, D1, WebAuthn, TypeScript)** — salvatorepesti_com_case01_cloudflare_auth, salvatorepesti_com_cloudflare_ecosystem, salvatorepesti_com_authentication_systems [EXTRACTED 1.00]
 - **Engineering Philosophy: Boundaries, Security Posture, Documentation** — salvatorepesti_com_approach_boundaries, salvatorepesti_com_approach_security_posture, salvatorepesti_com_approach_documentation, salvatorepesti_com_approach_read_system [EXTRACTED 0.95]
 
-## Communities (9 total, 0 thin omitted)
+## Communities (10 total, 0 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.1
@@ -76,16 +77,20 @@ Cohesion: 0.25
 Nodes (8): added_lines_for_file(), Added lines scoped to a specific file's hunks only., tools/validator_rules.py — salvatorepesti.com Project-specific validator rules., index.html must not gain inline style= attributes — use CSS classes instead., _headers CSP must not gain unsafe-eval or wildcard script-src., _headers CSP must not gain unsafe-eval or wildcard script-src., _rule_csp_not_weakened(), _rule_no_inline_styles()
 
 ### Community 5 - "Community 5"
-Cohesion: 0.29
-Nodes (7): API Design & Edge Compute, Principle: Security Is a Posture, Not a Sprint, Browser Security Hardening, Edge Infrastructure, Salvatore Pesti, Secure Web Architecture, Security Auditing & Hardening
+Cohesion: 0.4
+Nodes (5): Automated Release Pipelines, Case 02 — SaaS p95 TTFB Reduction 71%, CDN & Caching Strategies, Frontend Performance Optimization, Infrastructure & Deployment Automation
 
 ### Community 6 - "Community 6"
-Cohesion: 0.33
-Nodes (6): Principle: Tooling Earns Its Keep, Authentication Systems, Case 01 — Cloudflare-native Auth Layer for Fintech, Case 03 — Custom Workflow Tooling (Media Client), Cloudflare Ecosystem, Custom Tooling & Workflow Engineering
+Cohesion: 0.4
+Nodes (5): API Design & Edge Compute, Authentication Systems, Case 01 — Cloudflare-native Auth Layer for Fintech, Cloudflare Ecosystem, Edge Infrastructure
 
 ### Community 7 - "Community 7"
 Cohesion: 0.4
-Nodes (5): Automated Release Pipelines, Case 02 — SaaS p95 TTFB Reduction 71%, CDN & Caching Strategies, Frontend Performance Optimization, Infrastructure & Deployment Automation
+Nodes (5): Principle: Security Is a Posture, Not a Sprint, Browser Security Hardening, Salvatore Pesti, Secure Web Architecture, Security Auditing & Hardening
+
+### Community 8 - "Community 8"
+Cohesion: 0.67
+Nodes (3): Principle: Tooling Earns Its Keep, Case 03 — Custom Workflow Tooling (Media Client), Custom Tooling & Workflow Engineering
 
 ## Knowledge Gaps
 - **29 isolated node(s):** `Files present in a diff via --- a/ headers. Does not catch new files (use files_`, `Files touched in a diff via +++ b/ headers. Includes new files where source side`, `Added lines scoped to a specific file's hunks only.`, `Removed lines scoped to a specific file's hunks only.`, `js/data.js is generated — must not be edited directly.` (+24 more)
@@ -94,7 +99,7 @@ Nodes (5): Automated Release Pipelines, Case 02 — SaaS p95 TTFB Reduction 71%,
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `salvatorepesti.com — Personal Portfolio Site` connect `Community 3` to `Community 5`, `Community 6`, `Community 7`?**
+- **Why does `salvatorepesti.com — Personal Portfolio Site` connect `Community 3` to `Community 8`, `Community 5`, `Community 6`, `Community 7`?**
   _High betweenness centrality (0.066) - this node is a cross-community bridge._
 - **Why does `test_metacontroller_escalates_to_human_on_rule2()` connect `Community 2` to `Community 1`?**
   _High betweenness centrality (0.058) - this node is a cross-community bridge._

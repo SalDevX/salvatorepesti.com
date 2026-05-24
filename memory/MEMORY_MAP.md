@@ -40,7 +40,7 @@
 
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `index.html` | `Case 01 — MartaHowell Jewellery — Edge infrastructure for a private luxury wholesale showroom`, `API Design & Edge Compute`, `Authentication Systems` | — | Workers auth (HttpOnly sessions, D1), R2 CDN, KV data layer, FileMaker export pipeline |
+| `index.html` | `Case 01 — MartaHowell Jewellery — Edge infrastructure for a private luxury wholesale showroom`, `API Design & Edge Compute`, `Authentication Systems` | — | Workers auth (HttpOnly sessions, D1), R2 CDN, KV data layer, FileMaker export pipeline; HSTS preload-listed; Mozilla Observatory 130/100 |
 | `index.html` + `_headers` | `Cloudflare Ecosystem`, `Edge Infrastructure` | `Cloudflare Ecosystem` **5 edges**, `Edge Infrastructure` **4 edges** | CSP + CDN config — parallel security review |
 | `wrangler.toml` | Pages config — name, build output dir | — | No credentials — safe to commit |
 

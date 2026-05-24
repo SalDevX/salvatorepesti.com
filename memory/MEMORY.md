@@ -59,7 +59,6 @@ git push origin main
 
 | Date | What | File |
 |------|------|------|
-| 2026-05-24 | content: index.html — Case 02 "Holography" (open-source CLI, graph-aware agent framework for Claude Code) inserted; reel-engine renumbered to Case 03 | index.html |
 | 2026-05-24 | feat: tools/validator.py — removed_lines_for_file(diff, filename) added; file-scoped removed lines extractor; injected into validator_rules.py module | tools/validator.py |
 | 2026-05-24 | fix: validator_rules.py — _rule_email_protection_intact() now uses removed_lines_for_file(diff, "index.html") instead of removed_lines(diff) — scoped to index.html only, prevents false positives | tools/validator_rules.py |
 | 2026-05-24 | fix: replace 4 generic validator rules (data.js, sftp, assets, mobile) with 3 project-specific rules — `_rule_no_inline_styles`, `_rule_email_protection_intact`, `_rule_csp_not_weakened`; graph: `files_touched_in_diff()` now 4 edges, `added_lines_for_file()` and `_rule_email_protection_intact()` new god nodes at 4 edges | tools/validator_rules.py |
@@ -67,4 +66,5 @@ git push origin main
 | 2026-05-24 | content: Case 01 title → "Edge infrastructure for a private luxury wholesale showroom"; description expanded with HttpOnly sessions, D1-backed credential management, R2 asset CDN, KV data layer; added `KV` and `Python` stack chips | index.html |
 | 2026-05-24 | feat: bin/commit now auto push+deploy — added `push_and_deploy()` (git push → npx wrangler pages deploy . --branch master); `--skip-deploy` flag added; solves stale cache on production after every commit | bin/commit |
 | 2026-05-24 | doc: tooling-agent.prompt — bin/commit added to OWNERSHIP block and COMMON TASKS; was missing despite being @tooling-agent's file | agents/tooling-agent.prompt |
+| 2026-05-24 | content: C1 refine — removed inline "HSTS preload-listed · Hardened browser security architecture." from Case 01 paragraph (redundant with stack chips) | index.html |
 
