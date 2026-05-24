@@ -64,6 +64,20 @@ def removed_lines(diff: str) -> list[str]:
     ]
 
 
+def removed_lines_for_file(diff: str, filename: str) -> list[str]:
+    """Removed lines scoped to a specific file's hunks only."""
+    result = []
+    in_file = False
+    for line in diff.splitlines():
+        if line.startswith("--- a/"):
+            in_file = line[6:] == filename
+        elif line.startswith("--- ") or line.startswith("+++ "):
+            pass
+        elif in_file and line.startswith("-") and not line.startswith("---"):
+            result.append(line[1:])
+    return result
+
+
 # ---------------------------------------------------------------------------
 # Universal fallback rules (override in validator_rules.py)
 # ---------------------------------------------------------------------------
@@ -147,6 +161,7 @@ def _load_project_rules() -> tuple[list, dict]:
     mod.added_lines = added_lines
     mod.added_lines_for_file = added_lines_for_file
     mod.removed_lines = removed_lines
+    mod.removed_lines_for_file = removed_lines_for_file
     mod.PROJECT_ROOT = PROJECT_ROOT
 
     try:

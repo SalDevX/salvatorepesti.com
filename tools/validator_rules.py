@@ -6,7 +6,7 @@ Project-specific validator rules. Overrides universal fallback rules in validato
 import re
 
 # -- helpers injected by validator.py: files_in_diff, files_touched_in_diff,
-#    added_lines, added_lines_for_file, removed_lines, PROJECT_ROOT
+#    added_lines, added_lines_for_file, removed_lines, removed_lines_for_file, PROJECT_ROOT
 
 
 def _rule_no_inline_styles(diff: str) -> tuple[bool, str]:
@@ -22,8 +22,7 @@ def _rule_email_protection_intact(diff: str) -> tuple[bool, str]:
     touched = files_touched_in_diff(diff)
     if "index.html" not in touched:
         return True, ""
-    removed = removed_lines(diff)
-    for line in removed:
+    for line in removed_lines_for_file(diff, "index.html"):
         if "email-decode.min.js" in line:
             return False, "Rule 2: Cloudflare email-decode.min.js removed from index.html — this breaks email obfuscation"
     return True, ""

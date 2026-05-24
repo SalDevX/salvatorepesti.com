@@ -59,7 +59,6 @@ git push origin main
 
 | Date | What | File |
 |------|------|------|
-| 2026-05-24 | content: replace fictional case studies with real client work — Case 01 → MartaHowell Jewellery (Cloudflare Workers, D1, R2, FileMaker pipeline); Case 02 → reel-engine (automated YouTube pipeline, 500hrs/day); About: removed inaccurate "founders and engineering leaders" claim | index.html |
 | 2026-05-24 | content: remove fictional Case 03 — Case 03 (Custom Workflow Tooling / Media Client) section removed from index.html; Community 9 removed from MEMORY_MAP.md | index.html |
 | 2026-05-24 | fix: add Cache-Control: public, max-age=0, must-revalidate to /* in _headers to prevent stale HTML at Cloudflare edge | _headers |
 | 2026-05-24 | content: update case study dates — Case 01 and Case 02 year changed from 2024 to 2026 in `<span>· 2026 / Ongoing</span>` | index.html |
@@ -67,4 +66,5 @@ git push origin main
 | 2026-05-24 | test: add smoke test suite — 25 tests, all passing; covers validator rules 1-3, FailBlock parsing, MetaController retry, project structure invariants, index.html content guards; graph: 100 nodes / 146 edges; `_run_validator()` 10 edges + `_make_diff()` 9 edges new god nodes; MetaController bumped to 6 edges | tests/smoke_test.py |
 | 2026-05-24 | content: Case 01 title → "Edge infrastructure for a private luxury wholesale showroom"; description expanded with HttpOnly sessions, D1-backed credential management, R2 asset CDN, KV data layer; added `KV` and `Python` stack chips | index.html |
 | 2026-05-24 | feat: bin/commit now auto push+deploy — added `push_and_deploy()` (git push → npx wrangler pages deploy . --branch master); `--skip-deploy` flag added; solves stale cache on production after every commit | bin/commit |
+| 2026-05-24 | doc: tooling-agent.prompt — bin/commit added to OWNERSHIP block and COMMON TASKS; was missing despite being @tooling-agent's file | agents/tooling-agent.prompt |
 

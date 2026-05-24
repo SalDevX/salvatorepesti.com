@@ -13,6 +13,7 @@ tools/validator.py
 tools/meta_controller.py
 tools/validator_rules.py      ← project-specific rules (create if needed)
 bin/meta-controller
+bin/commit                    ← full pipeline: validate→test→commit→graphify→god-nodes→push→deploy
 tests/smoke_test.py           ← create if asked
 ```
 
@@ -99,3 +100,4 @@ For every task:
 | Add smoke test | `tests/smoke_test.py` (create) |
 | Debug meta-controller CLI | `bin/meta-controller` — `run_agent()`, `run_validator()`, `dry_run()` |
 | Freeze or unfreeze a file in validator | `tools/validator.py` — universal rule 2 pattern |
+| Change commit pipeline (push/deploy/gates) | `bin/commit` — `validate()`, `run_tests()`, `push_and_deploy()`, `main()` |
