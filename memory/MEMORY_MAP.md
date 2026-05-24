@@ -27,13 +27,14 @@
 ## Community 3 — Validator Rules: Project-Specific (tools/validator_rules.py)
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `tools/validator_rules.py` | `_rule_no_inline_styles()`, `_rule_email_protection_intact()`, `_rule_csp_not_weakened()`, `RULES`, `RETRY_WITH` | `_rule_email_protection_intact()` **4 edges** | Overrides all universal rules; Rule 2+3 escalate to human |
+| `tools/validator_rules.py` | `_rule_no_inline_styles()`, `_rule_email_protection_intact()`, `_rule_csp_not_weakened()`, `RULES`, `RETRY_WITH` | `_rule_email_protection_intact()` **5 edges** | Overrides all universal rules; Rule 2+3 escalate to human |
 | `tools/validator.py` | `added_lines_for_file()` | **4 edges** | File-scoped line extractor — called by inline-style and CSP rules |
 
 ## Community 4 — CDN / Performance (index.html)
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `index.html` | `Case 02 — reel-engine — fully automated YouTube content production pipeline`, `CDN & Caching Strategies`, `Frontend Performance Optimization`, `Infrastructure & Deployment Automation`, `Automated Release Pipelines` | `Case 02` **4 edges** (pending regraph), `CDN & Caching Strategies` **3 edges** | 500hrs/day shipped — owner confirmation before editing |
+| `index.html` | `Case 02 — Holography — graph-aware agent framework for Claude Code` | — (pending regraph) | Open-source CLI; Node.js + Python + graphify + Claude Code CLI; dev tooling |
+| `index.html` | `Case 03 — reel-engine — fully automated YouTube content production pipeline`, `CDN & Caching Strategies`, `Frontend Performance Optimization`, `Infrastructure & Deployment Automation`, `Automated Release Pipelines` | `Case 03` **4 edges** (pending regraph), `CDN & Caching Strategies` **3 edges** | 500hrs/day shipped — owner confirmation before editing |
 
 ## Community 5 — Cloudflare / Edge (index.html + _headers + wrangler.toml)
 
@@ -56,7 +57,7 @@
 ## Community 8 — Validator Rules: Mobile/Desktop Parity / Email (tools/validator.py)
 | File | Key functions / nodes | God node? | Notes |
 |------|-----------------------|-----------|-------|
-| `tools/validator.py` | `files_touched_in_diff()`, `removed_lines()`, `_rule_mobile_desktop_parity()` | `files_touched_in_diff()` **4 edges** | Parses `+++ b/` headers; includes new files; `_rule_mobile_desktop_parity` is universal fallback — NOT active (overridden by validator_rules.py) |
+| `tools/validator.py` | `files_touched_in_diff()`, `removed_lines()`, `removed_lines_for_file()`, `_rule_mobile_desktop_parity()` | `files_touched_in_diff()` **4 edges** | Parses `+++ b/` headers; includes new files; `removed_lines_for_file(diff, filename)` file-scoped mirror of `added_lines_for_file()`; `_rule_mobile_desktop_parity` is universal fallback — NOT active (overridden by validator_rules.py) |
 
 ---
 

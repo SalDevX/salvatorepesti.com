@@ -63,7 +63,7 @@ Cross-agent task: read both relevant prompt files. No others.
 
 ## God Nodes — never touch without full cross-agent audit
 
-Graph source: `graphify-out/GRAPH_REPORT.md` · 100 nodes · 146 edges · last run 2026-05-24
+Graph source: `graphify-out/GRAPH_REPORT.md` · 108 nodes · 155 edges · last run 2026-05-24
 
 | Node | Edges | File | Owner | Notes |
 |------|-------|------|-------|-------|
@@ -75,11 +75,11 @@ Graph source: `graphify-out/GRAPH_REPORT.md` · 100 nodes · 146 edges · last r
 | `files_in_diff()` | 4 | `tools/validator.py` | @tooling-agent | Used by validator rules — signature change breaks all |
 | `files_touched_in_diff()` | 4 | `tools/validator.py` | @tooling-agent | Includes new files — used by _rule_email_protection_intact |
 | `added_lines_for_file()` | 4 | `tools/validator.py` | @tooling-agent | File-scoped line extractor — used by inline-style and CSP rules |
-| `_rule_sftp_deploy_logic_gate()` | 4 | `tools/validator.py` | @tooling-agent | Universal fallback — NOT active (overridden by validator_rules.py) |
-| `_rule_email_protection_intact()` | 4 | `tools/validator_rules.py` | @tooling-agent + @html-agent | Prevents removal of CF email-decode.min.js — Rule 2: human review |
+| `_rule_sftp_deploy_logic_gate()` | 5 | `tools/validator.py` | @tooling-agent | Universal fallback — NOT active (overridden by validator_rules.py) |
+| `_rule_email_protection_intact()` | 5 | `tools/validator_rules.py` | @tooling-agent + @html-agent | Prevents removal of CF email-decode.min.js — Rule 2: human review |
 | `Edge Infrastructure` | 4 | `index.html + _headers + wrangler.toml` | @html-agent | Cache/CDN config must not regress |
 | `Secure Web Architecture` | 4 | `index.html + _headers` | @html-agent + @security-engineer | Parallel security review required |
-| `Case 02 — reel-engine — fully automated YouTube content production pipeline` | 4 | `index.html` | @html-agent | Owner confirmation before changing metrics |
+| `Case 03 — reel-engine — fully automated YouTube content production pipeline` | 4 | `index.html` | @html-agent | Owner confirmation before changing metrics |
 | `added_lines()` | 3 | `tools/validator.py` | @tooling-agent | All added lines (not file-scoped) — used by universal fallback rules |
 | `Salvatore Pesti` | 3 | `index.html` | @html-agent | Owner confirmation before changing bio/identity |
 | `CDN & Caching Strategies` | 3 | `index.html` | @html-agent | Performance claims — verify before editing |

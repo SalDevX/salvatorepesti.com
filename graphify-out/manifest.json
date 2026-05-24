@@ -1,46 +1,58 @@
 {
-  "~/dev/salvatorepesti.com/js/main.js": {
+  "/home/craftworkson/dev/salvatorepesti.com/js/main.js": {
     "mtime": 1779611439.6555572,
     "hash": "efa50a5f94fd66bde53fcb09a00054ee"
   },
-  "~/dev/salvatorepesti.com/tools/validator.py": {
-    "mtime": 1779610084.469569,
-    "hash": "9a33f2af116fc3a5cb2646d9053f814f"
+  "/home/craftworkson/dev/salvatorepesti.com/tools/validator.py": {
+    "mtime": 1779627975.6466033,
+    "hash": "4f98769a0c61ba248ba9f4f6b1c2363c"
   },
-  "~/dev/salvatorepesti.com/tools/meta_controller.py": {
+  "/home/craftworkson/dev/salvatorepesti.com/tools/validator_rules.py": {
+    "mtime": 1779627991.8410938,
+    "hash": "a1605e0e1aafd136a193643fb87133e8"
+  },
+  "/home/craftworkson/dev/salvatorepesti.com/tools/meta_controller.py": {
     "mtime": 1779610084.4699872,
     "hash": "5e2f1924e6e37664a873a4a4cec83000"
   },
-  "~/dev/salvatorepesti.com/bin/meta-controller": {
+  "/home/craftworkson/dev/salvatorepesti.com/tests/smoke_test.py": {
+    "mtime": 1779620003.8878152,
+    "hash": "f27b6b908d4735e21cd5113004c68148"
+  },
+  "/home/craftworkson/dev/salvatorepesti.com/bin/meta-controller": {
     "mtime": 1779610084.4519525,
     "hash": "63cd21460aaa26a31336d2e363cdf199"
   },
-  "~/dev/salvatorepesti.com/bin/commit": {
-    "mtime": 1779610084.474362,
-    "hash": "2e354ad02e16f72db1c427dc65da7ea4"
+  "/home/craftworkson/dev/salvatorepesti.com/bin/commit": {
+    "mtime": 1779623678.5985546,
+    "hash": "162936ed831ee88227628587410ff66d"
   },
-  "~/dev/salvatorepesti.com/CLAUDE.md": {
+  "/home/craftworkson/dev/salvatorepesti.com/CLAUDE.md": {
     "mtime": 1779610084.4649324,
     "hash": "6b707be07d1e5d1204f755f5fca95b4d"
   },
-  "~/dev/salvatorepesti.com/AGENTS.md": {
-    "mtime": 1779611715.3143559,
-    "hash": "8210dc14f82d48cda0cf89017c04dba3"
+  "/home/craftworkson/dev/salvatorepesti.com/AGENTS.md": {
+    "mtime": 1779628228.47178,
+    "hash": "524cf80ff44793cef2cf9d1f30c44d31"
   },
-  "~/dev/salvatorepesti.com/salvatorepesti.com.html": {
-    "mtime": 1779603843.7694635,
-    "hash": "d84aeea98b8065787c8a5b98fb2e155a"
+  "/home/craftworkson/dev/salvatorepesti.com/index.html": {
+    "mtime": 1779627869.520205,
+    "hash": "0e6fdd3630a01f43ad5661df0b0eaabe"
   },
-  "~/dev/salvatorepesti.com/index.html": {
-    "mtime": 1779611601.555651,
-    "hash": "850d4a6812dc20b7e8693c3836157c38"
+  "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY_MAP.md": {
+    "mtime": 1779628229.2406132,
+    "hash": "bc411353bf223a88f239233e2cb17349"
   },
-  "~/dev/salvatorepesti.com/memory/MEMORY_MAP.md": {
-    "mtime": 1779611752.9063883,
-    "hash": "2b1e50af08824432a547d3167972f5a6"
+  "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY_REFERENCE.md": {
+    "mtime": 1779612283.8668687,
+    "hash": "0db6b5c3423713ec6a91a118ab2d40c7"
   },
-  "~/dev/salvatorepesti.com/memory/MEMORY.md": {
-    "mtime": 1779611785.0193334,
-    "hash": "ca641984c859e0195945176354371080"
+  "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY.md": {
+    "mtime": 1779628166.527487,
+    "hash": "e57c780aa3d66918d95be2e4a115f93e"
+  },
+  "/home/craftworkson/dev/salvatorepesti.com/memory/MEMORY_CHANGELOG.md": {
+    "mtime": 1779628243.4280226,
+    "hash": "4a13cae39931144fcd3fc3b1f0282405"
   }
 }

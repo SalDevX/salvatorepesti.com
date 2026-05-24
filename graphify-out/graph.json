@@ -52,7 +52,7 @@
       "source_file": "js/main.js",
       "source_location": "L1",
       "id": "js_main_js",
-      "community": 9,
+      "community": 8,
       "norm_label": "main.js"
     },
     {
@@ -61,7 +61,7 @@
       "source_file": "js/main.js",
       "source_location": "L4",
       "id": "js_main_tick",
-      "community": 9,
+      "community": 8,
       "norm_label": "tick()"
     },
     {
@@ -106,7 +106,7 @@
       "source_file": "tools/validator.py",
       "source_location": "L45",
       "id": "tools_validator_added_lines_for_file",
-      "community": 5,
+      "community": 4,
       "norm_label": "added_lines_for_file()"
     },
     {
@@ -119,10 +119,19 @@
       "norm_label": "removed_lines()"
     },
     {
+      "label": "removed_lines_for_file()",
+      "file_type": "code",
+      "source_file": "tools/validator.py",
+      "source_location": "L67",
+      "id": "tools_validator_removed_lines_for_file",
+      "community": 0,
+      "norm_label": "removed_lines_for_file()"
+    },
+    {
       "label": "_rule_no_direct_data_js_edit()",
       "file_type": "code",
       "source_file": "tools/validator.py",
-      "source_location": "L71",
+      "source_location": "L85",
       "id": "tools_validator_rule_no_direct_data_js_edit",
       "community": 0,
       "norm_label": "_rule_no_direct_data_js_edit()"
@@ -131,7 +140,7 @@
       "label": "_rule_sftp_deploy_logic_gate()",
       "file_type": "code",
       "source_file": "tools/validator.py",
-      "source_location": "L78",
+      "source_location": "L92",
       "id": "tools_validator_rule_sftp_deploy_logic_gate",
       "community": 0,
       "norm_label": "_rule_sftp_deploy_logic_gate()"
@@ -140,7 +149,7 @@
       "label": "_rule_asset_path_consistency()",
       "file_type": "code",
       "source_file": "tools/validator.py",
-      "source_location": "L89",
+      "source_location": "L103",
       "id": "tools_validator_rule_asset_path_consistency",
       "community": 0,
       "norm_label": "_rule_asset_path_consistency()"
@@ -149,7 +158,7 @@
       "label": "_rule_mobile_desktop_parity()",
       "file_type": "code",
       "source_file": "tools/validator.py",
-      "source_location": "L101",
+      "source_location": "L115",
       "id": "tools_validator_rule_mobile_desktop_parity",
       "community": 0,
       "norm_label": "_rule_mobile_desktop_parity()"
@@ -158,7 +167,7 @@
       "label": "_load_project_rules()",
       "file_type": "code",
       "source_file": "tools/validator.py",
-      "source_location": "L130",
+      "source_location": "L144",
       "id": "tools_validator_load_project_rules",
       "community": 0,
       "norm_label": "_load_project_rules()"
@@ -167,7 +176,7 @@
       "label": "main()",
       "file_type": "code",
       "source_file": "tools/validator.py",
-      "source_location": "L166",
+      "source_location": "L181",
       "id": "tools_validator_main",
       "community": 0,
       "norm_label": "main()"
@@ -196,15 +205,24 @@
       "source_file": "tools/validator.py",
       "source_location": "L46",
       "id": "tools_validator_rationale_46",
-      "community": 5,
+      "community": 4,
       "norm_label": "added lines scoped to a specific file's hunks only."
+    },
+    {
+      "label": "Removed lines scoped to a specific file's hunks only.",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L68",
+      "id": "tools_validator_rationale_68",
+      "community": 0,
+      "norm_label": "removed lines scoped to a specific file's hunks only."
     },
     {
       "label": "js/data.js is generated \u2014 must not be edited directly.",
       "file_type": "rationale",
       "source_file": "tools/validator.py",
-      "source_location": "L72",
-      "id": "tools_validator_rationale_72",
+      "source_location": "L86",
+      "id": "tools_validator_rationale_86",
       "community": 0,
       "norm_label": "js/data.js is generated \u2014 must not be edited directly."
     },
@@ -212,8 +230,8 @@
       "label": "tools/sftp_sync.py must not gain new logic \u2014 comment-only changes are allowed.",
       "file_type": "rationale",
       "source_file": "tools/validator.py",
-      "source_location": "L79",
-      "id": "tools_validator_rationale_79",
+      "source_location": "L93",
+      "id": "tools_validator_rationale_93",
       "community": 0,
       "norm_label": "tools/sftp_sync.py must not gain new logic \u2014 comment-only changes are allowed."
     },
@@ -221,8 +239,8 @@
       "label": "Asset filenames referenced in diffs must exist on disk in assets/.",
       "file_type": "rationale",
       "source_file": "tools/validator.py",
-      "source_location": "L90",
-      "id": "tools_validator_rationale_90",
+      "source_location": "L104",
+      "id": "tools_validator_rationale_104",
       "community": 0,
       "norm_label": "asset filenames referenced in diffs must exist on disk in assets/."
     },
@@ -230,8 +248,8 @@
       "label": "Desktop UI changes must be paired with a matching mobile change in the same diff",
       "file_type": "rationale",
       "source_file": "tools/validator.py",
-      "source_location": "L102",
-      "id": "tools_validator_rationale_102",
+      "source_location": "L116",
+      "id": "tools_validator_rationale_116",
       "community": 0,
       "norm_label": "desktop ui changes must be paired with a matching mobile change in the same diff"
     },
@@ -239,8 +257,8 @@
       "label": "Load project-specific rules from tools/validator_rules.py if it exists.     The",
       "file_type": "rationale",
       "source_file": "tools/validator.py",
-      "source_location": "L131",
-      "id": "tools_validator_rationale_131",
+      "source_location": "L145",
+      "id": "tools_validator_rationale_145",
       "community": 0,
       "norm_label": "load project-specific rules from tools/validator_rules.py if it exists.     the"
     },
@@ -250,7 +268,7 @@
       "source_file": "tools/validator_rules.py",
       "source_location": "L1",
       "id": "tools_validator_rules_py",
-      "community": 5,
+      "community": 4,
       "norm_label": "validator_rules.py"
     },
     {
@@ -259,7 +277,7 @@
       "source_file": "tools/validator_rules.py",
       "source_location": "L12",
       "id": "tools_validator_rules_rule_no_inline_styles",
-      "community": 5,
+      "community": 4,
       "norm_label": "_rule_no_inline_styles()"
     },
     {
@@ -275,9 +293,9 @@
       "label": "_rule_csp_not_weakened()",
       "file_type": "code",
       "source_file": "tools/validator_rules.py",
-      "source_location": "L32",
+      "source_location": "L31",
       "id": "tools_validator_rules_rule_csp_not_weakened",
-      "community": 5,
+      "community": 4,
       "norm_label": "_rule_csp_not_weakened()"
     },
     {
@@ -286,7 +304,7 @@
       "source_file": "tools/validator_rules.py",
       "source_location": "L1",
       "id": "tools_validator_rules_rationale_1",
-      "community": 5,
+      "community": 4,
       "norm_label": "tools/validator_rules.py \u2014 salvatorepesti.com project-specific validator rules."
     },
     {
@@ -295,7 +313,7 @@
       "source_file": "tools/validator_rules.py",
       "source_location": "L13",
       "id": "tools_validator_rules_rationale_13",
-      "community": 5,
+      "community": 4,
       "norm_label": "index.html must not gain inline style= attributes \u2014 use css classes instead."
     },
     {
@@ -311,9 +329,9 @@
       "label": "_headers CSP must not gain unsafe-eval or wildcard script-src.",
       "file_type": "rationale",
       "source_file": "tools/validator_rules.py",
-      "source_location": "L33",
-      "id": "tools_validator_rules_rationale_33",
-      "community": 5,
+      "source_location": "L32",
+      "id": "tools_validator_rules_rationale_32",
+      "community": 4,
       "norm_label": "_headers csp must not gain unsafe-eval or wildcard script-src."
     },
     {
@@ -439,7 +457,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L23",
       "id": "tests_smoke_test_run_validator",
-      "community": 4,
+      "community": 1,
       "norm_label": "_run_validator()"
     },
     {
@@ -448,7 +466,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L31",
       "id": "tests_smoke_test_make_diff",
-      "community": 4,
+      "community": 1,
       "norm_label": "_make_diff()"
     },
     {
@@ -475,7 +493,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L66",
       "id": "tests_smoke_test_test_validator_empty_diff",
-      "community": 4,
+      "community": 1,
       "norm_label": "test_validator_empty_diff()"
     },
     {
@@ -484,7 +502,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L76",
       "id": "tests_smoke_test_test_rule1_fails_on_inline_style",
-      "community": 4,
+      "community": 1,
       "norm_label": "test_rule1_fails_on_inline_style()"
     },
     {
@@ -493,7 +511,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L83",
       "id": "tests_smoke_test_test_rule1_passes_on_class_attribute",
-      "community": 4,
+      "community": 1,
       "norm_label": "test_rule1_passes_on_class_attribute()"
     },
     {
@@ -502,7 +520,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L89",
       "id": "tests_smoke_test_test_rule1_only_fires_on_index_html",
-      "community": 4,
+      "community": 1,
       "norm_label": "test_rule1_only_fires_on_index_html()"
     },
     {
@@ -511,7 +529,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L99",
       "id": "tests_smoke_test_test_rule2_fails_when_email_decode_removed",
-      "community": 4,
+      "community": 1,
       "norm_label": "test_rule2_fails_when_email_decode_removed()"
     },
     {
@@ -520,7 +538,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L110",
       "id": "tests_smoke_test_test_rule2_passes_when_email_decode_untouched",
-      "community": 4,
+      "community": 1,
       "norm_label": "test_rule2_passes_when_email_decode_untouched()"
     },
     {
@@ -529,7 +547,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L120",
       "id": "tests_smoke_test_test_rule3_fails_on_unsafe_eval",
-      "community": 4,
+      "community": 1,
       "norm_label": "test_rule3_fails_on_unsafe_eval()"
     },
     {
@@ -538,7 +556,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L127",
       "id": "tests_smoke_test_test_rule3_fails_on_wildcard_script_src",
-      "community": 4,
+      "community": 1,
       "norm_label": "test_rule3_fails_on_wildcard_script_src()"
     },
     {
@@ -547,7 +565,7 @@
       "source_file": "tests/smoke_test.py",
       "source_location": "L134",
       "id": "tests_smoke_test_test_rule3_passes_on_safe_csp_change",
-      "community": 4,
+      "community": 1,
       "norm_label": "test_rule3_passes_on_safe_csp_change()"
     },
     {
@@ -677,6 +695,60 @@
       "norm_label": "test_csp_not_weakened_in_headers()"
     },
     {
+      "label": "js/data.js is generated \u2014 must not be edited directly.",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L72",
+      "community": 0,
+      "norm_label": "js/data.js is generated \u2014 must not be edited directly.",
+      "id": "tools_validator_rationale_72"
+    },
+    {
+      "label": "tools/sftp_sync.py must not gain new logic \u2014 comment-only changes are allowed.",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L79",
+      "community": 0,
+      "norm_label": "tools/sftp_sync.py must not gain new logic \u2014 comment-only changes are allowed.",
+      "id": "tools_validator_rationale_79"
+    },
+    {
+      "label": "Asset filenames referenced in diffs must exist on disk in assets/.",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L90",
+      "community": 0,
+      "norm_label": "asset filenames referenced in diffs must exist on disk in assets/.",
+      "id": "tools_validator_rationale_90"
+    },
+    {
+      "label": "Desktop UI changes must be paired with a matching mobile change in the same diff",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L102",
+      "community": 0,
+      "norm_label": "desktop ui changes must be paired with a matching mobile change in the same diff",
+      "id": "tools_validator_rationale_102"
+    },
+    {
+      "label": "Load project-specific rules from tools/validator_rules.py if it exists.     The",
+      "file_type": "rationale",
+      "source_file": "tools/validator.py",
+      "source_location": "L131",
+      "community": 0,
+      "norm_label": "load project-specific rules from tools/validator_rules.py if it exists.     the",
+      "id": "tools_validator_rationale_131"
+    },
+    {
+      "label": "_headers CSP must not gain unsafe-eval or wildcard script-src.",
+      "file_type": "rationale",
+      "source_file": "tools/validator_rules.py",
+      "source_location": "L33",
+      "community": 4,
+      "norm_label": "_headers csp must not gain unsafe-eval or wildcard script-src.",
+      "id": "tools_validator_rules_rationale_33"
+    },
+    {
       "label": "salvatorepesti.com \u2014 Personal Portfolio Site",
       "file_type": "document",
       "source_file": "salvatorepesti.com.html",
@@ -698,7 +770,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "salvatore pesti",
       "id": "salvatorepesti_com_salvatore_pesti"
     },
@@ -711,7 +783,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "edge infrastructure",
       "id": "salvatorepesti_com_edge_infrastructure"
     },
@@ -724,7 +796,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "secure web architecture",
       "id": "salvatorepesti_com_secure_web_architecture"
     },
@@ -737,7 +809,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "authentication systems",
       "id": "salvatorepesti_com_authentication_systems"
     },
@@ -750,7 +822,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "cloudflare ecosystem",
       "id": "salvatorepesti_com_cloudflare_ecosystem"
     },
@@ -763,7 +835,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "cdn & caching strategies",
       "id": "salvatorepesti_com_cdn_caching_strategies"
     },
@@ -776,7 +848,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "api design & edge compute",
       "id": "salvatorepesti_com_api_design_edge_compute"
     },
@@ -789,7 +861,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "browser security hardening",
       "id": "salvatorepesti_com_browser_security_hardening"
     },
@@ -802,7 +874,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 6,
+      "community": 5,
       "norm_label": "security auditing & hardening",
       "id": "salvatorepesti_com_security_auditing_hardening"
     },
@@ -828,7 +900,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "automated release pipelines",
       "id": "salvatorepesti_com_automated_release_pipelines"
     },
@@ -841,7 +913,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "frontend performance optimization",
       "id": "salvatorepesti_com_frontend_performance_optimization"
     },
@@ -854,7 +926,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "infrastructure & deployment automation",
       "id": "salvatorepesti_com_infrastructure_deployment_automation"
     },
@@ -880,7 +952,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "custom tooling & workflow engineering",
       "id": "salvatorepesti_com_custom_tooling_workflow"
     },
@@ -893,7 +965,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "case 01 \u2014 cloudflare-native auth layer for fintech",
       "id": "salvatorepesti_com_case01_cloudflare_auth"
     },
@@ -906,7 +978,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 8,
+      "community": 7,
       "norm_label": "case 02 \u2014 saas p95 ttfb reduction 71%",
       "id": "salvatorepesti_com_case02_saas_ttfb"
     },
@@ -919,7 +991,7 @@
       "captured_at": null,
       "author": "Salvatore Pesti",
       "contributor": null,
-      "community": 7,
+      "community": 6,
       "norm_label": "case 03 \u2014 custom workflow tooling (media client)",
       "id": "salvatorepesti_com_case03_workflow_tooling"
     },
@@ -961,7 +1033,7 @@
       "author": "Salvatore Pesti",
       "contributor": null,
       "rationale": "Hardening lives in the defaults \u2014 headers, cookies, build, dependencies, deploy. Audited, not bolted on.",
-      "community": 6,
+      "community": 5,
       "norm_label": "principle: security is a posture, not a sprint",
       "id": "salvatorepesti_com_approach_security_posture"
     },
@@ -989,7 +1061,7 @@
       "author": "Salvatore Pesti",
       "contributor": null,
       "rationale": "Scripts that save a teammate a meeting a week pay for themselves in a month.",
-      "community": 7,
+      "community": 6,
       "norm_label": "principle: tooling earns its keep",
       "id": "salvatorepesti_com_approach_tooling_earns_keep"
     },
@@ -1133,6 +1205,16 @@
       "confidence_score": 1.0,
       "source": "tools_validator_py",
       "target": "tools_validator_removed_lines"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_py",
+      "target": "tools_validator_removed_lines_for_file"
     },
     {
       "relation": "contains",
@@ -1327,11 +1409,52 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tools/validator.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_68",
+      "target": "tools_validator_removed_lines_for_file"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tools/validator_rules.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "tools_validator_rules_rule_email_protection_intact",
+      "target": "tools_validator_removed_lines_for_file"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_86",
+      "target": "tools_validator_rule_no_direct_data_js_edit"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
       "source_location": "L72",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "tools_validator_rationale_72",
       "target": "tools_validator_rule_no_direct_data_js_edit"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_93",
+      "target": "tools_validator_rule_sftp_deploy_logic_gate"
     },
     {
       "relation": "rationale_for",
@@ -1347,11 +1470,31 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tools/validator.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_104",
+      "target": "tools_validator_rule_asset_path_consistency"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
       "source_location": "L90",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "tools_validator_rationale_90",
       "target": "tools_validator_rule_asset_path_consistency"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_116",
+      "target": "tools_validator_rule_mobile_desktop_parity"
     },
     {
       "relation": "rationale_for",
@@ -1372,6 +1515,16 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "tools_validator_main",
+      "target": "tools_validator_load_project_rules"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rationale_145",
       "target": "tools_validator_load_project_rules"
     },
     {
@@ -1443,6 +1596,16 @@
       "confidence_score": 1.0,
       "source": "tools_validator_rules_rationale_21",
       "target": "tools_validator_rules_rule_email_protection_intact"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tools/validator_rules.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tools_validator_rules_rationale_32",
+      "target": "tools_validator_rules_rule_csp_not_weakened"
     },
     {
       "relation": "rationale_for",
@@ -2611,5 +2774,5 @@
       "source_file": "salvatorepesti.com.html"
     }
   ],
-  "built_at_commit": "3b02a6beb42d8709de2b6df5863bec713242bb9f"
+  "built_at_commit": "3cf5a6f7024a931da35f76bf9e1a25a7c74b275c"
 }
